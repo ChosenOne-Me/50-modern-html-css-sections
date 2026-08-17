@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Modern Comparison Section</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b0b0f;
+      color: #fff;
+    }
+
+    .comparison {
+      padding: 100px 20px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .heading {
+      max-width: 650px;
+      margin: 0 auto 55px;
+      text-align: center;
+    }
+
+    .heading span {
+      color: #999;
+      font-size: 13px;
+      letter-spacing: 1px;
+    }
+
+    .heading h1 {
+      font-size: clamp(38px, 6vw, 58px);
+      margin: 15px 0;
+    }
+
+    .heading p {
+      color: #888;
+      line-height: 1.6;
+      font-size: 17px;
+    }
+
+    .table-wrapper {
+      overflow-x: auto;
+      border: 1px solid #29292f;
+      border-radius: 20px;
+    }
+
+    table {
+      width: 100%;
+      min-width: 650px;
+      border-collapse: collapse;
+      background: #111116;
+    }
+
+    th,
+    td {
+      padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid #29292f;
+      border-right: 1px solid #29292f;
+    }
+
+    th:last-child,
+    td:last-child {
+      border-right: none;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    th {
+      font-size: 15px;
+      background: #15151b;
+    }
+
+    th:first-child,
+    td:first-child {
+      text-align: left;
+    }
+
+    td:first-child {
+      color: #aaa;
+    }
+
+    .featured {
+      background: #1a1a20;
+    }
+
+    .check {
+      font-size: 18px;
+    }
+
+    .dash {
+      color: #555;
+    }
+
+    .badge {
+      display: inline-block;
+      margin-top: 7px;
+      padding: 5px 9px;
+      border-radius: 999px;
+      background: white;
+      color: black;
+      font-size: 9px;
+      font-weight: bold;
+    }
+
+    @media (max-width: 600px) {
+      .comparison {
+        padding: 70px 16px;
+      }
+
+      th,
+      td {
+        padding: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="comparison">
+
+    <div class="container">
+
+      <div class="heading">
+
+        <span>COMPARE</span>
+
+        <h1>Find The Right Plan.</h1>
+
+        <p>
+          Help customers quickly compare features
+          and choose the option that fits their needs.
+        </p>
+
+      </div>
+
+      <div class="table-wrapper">
+
+        <table>
+
+          <thead>
+
+            <tr>
+              <th>Features</th>
+
+              <th>
+                Starter
+              </th>
+
+              <th class="featured">
+                Pro
+                <div class="badge">POPULAR</div>
+              </th>
+
+              <th>
+                Business
+              </th>
+            </tr>
+
+          </thead>
+
+          <tbody>
+
+            <tr>
+              <td>Projects</td>
+              <td>5</td>
+              <td class="featured">Unlimited</td>
+              <td>Unlimited</td>
+            </tr>
+
+            <tr>
+              <td>Analytics</td>
+              <td class="check">✓</td>
+              <td class="featured check">✓</td>
+              <td class="check">✓</td>
+            </tr>
+
+            <tr>
+              <td>Priority Support</td>
+              <td class="dash">—</td>
+              <td class="featured check">✓</td>
+              <td class="check">✓</td>
+            </tr>
+
+            <tr>
+              <td>Team Collaboration</td>
+              <td class="dash">—</td>
+              <td class="featured check">✓</td>
+              <td class="check">✓</td>
+            </tr>
+
+            <tr>
+              <td>Advanced Security</td>
+              <td class="dash">—</td>
+              <td class="featured dash">—</td>
+              <td class="check">✓</td>
+            </tr>
+
+            <tr>
+              <td>Dedicated Support</td>
+              <td class="dash">—</td>
+              <td class="featured dash">—</td>
+              <td class="check">✓</td>
+            </tr>
+
+          </tbody>
+
+        </table>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</body>
+                                   </html>
