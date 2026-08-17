@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Timeline Section</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b0b0f;
+      color: #fff;
+    }
+
+    .timeline-section {
+      padding: 100px 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .heading {
+      max-width: 650px;
+      margin: 0 auto 70px;
+      text-align: center;
+    }
+
+    .heading span {
+      color: #999;
+      font-size: 13px;
+      letter-spacing: 1px;
+    }
+
+    .heading h1 {
+      font-size: clamp(40px, 6vw, 60px);
+      margin: 15px 0;
+    }
+
+    .heading p {
+      color: #888;
+      line-height: 1.6;
+      font-size: 17px;
+    }
+
+    .timeline {
+      position: relative;
+      max-width: 750px;
+      margin: auto;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 20px;
+      top: 0;
+      bottom: 0;
+      width: 1px;
+      background: #333;
+    }
+
+    .item {
+      position: relative;
+      padding-left: 65px;
+      margin-bottom: 45px;
+    }
+
+    .item:last-child {
+      margin-bottom: 0;
+    }
+
+    .dot {
+      position: absolute;
+      left: 11px;
+      top: 4px;
+      width: 19px;
+      height: 19px;
+      border: 4px solid #0b0b0f;
+      border-radius: 50%;
+      background: #fff;
+    }
+
+    .year {
+      color: #777;
+      font-size: 13px;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+
+    .card {
+      padding: 25px;
+      background: #111116;
+      border: 1px solid #29292f;
+      border-radius: 16px;
+    }
+
+    .card h2 {
+      font-size: 21px;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #888;
+      line-height: 1.7;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .timeline-section {
+        padding: 70px 16px;
+      }
+
+      .item {
+        padding-left: 50px;
+      }
+
+      .timeline::before {
+        left: 15px;
+      }
+
+      .dot {
+        left: 6px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="timeline-section">
+
+    <div class="container">
+
+      <div class="heading">
+
+        <span>OUR JOURNEY</span>
+
+        <h1>From Idea to Impact.</h1>
+
+        <p>
+          Present milestones, company history or important
+          events in a clean vertical timeline.
+        </p>
+
+      </div>
+
+      <div class="timeline">
+
+        <div class="item">
+
+          <div class="dot"></div>
+
+          <div class="year">2021</div>
+
+          <div class="card">
+
+            <h2>The Beginning</h2>
+
+            <p>
+              Started with a simple idea and a small team
+              focused on solving a real problem.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="item">
+
+          <div class="dot"></div>
+
+          <div class="year">2022</div>
+
+          <div class="card">
+
+            <h2>First Launch</h2>
+
+            <p>
+              Released the first product and welcomed
+              our first group of customers.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="item">
+
+          <div class="dot"></div>
+
+          <div class="year">2024</div>
+
+          <div class="card">
+
+            <h2>Growing The Team</h2>
+
+            <p>
+              Expanded the team and introduced new
+              products and services.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="item">
+
+          <div class="dot"></div>
+
+          <div class="year">2026</div>
+
+          <div class="card">
+
+            <h2>What's Next</h2>
+
+            <p>
+              Continuing to build better experiences and
+              creating even more value for our customers.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</body>
+</html>
