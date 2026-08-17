@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Modern Team Section</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b0b0f;
+      color: #fff;
+    }
+
+    .team {
+      padding: 100px 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .heading {
+      max-width: 650px;
+      margin: 0 auto 55px;
+      text-align: center;
+    }
+
+    .heading span {
+      color: #999;
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+
+    .heading h1 {
+      font-size: clamp(40px, 6vw, 60px);
+      margin: 15px 0;
+    }
+
+    .heading p {
+      color: #999;
+      font-size: 17px;
+      line-height: 1.6;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .member {
+      padding: 20px;
+      background: #111116;
+      border: 1px solid #29292f;
+      border-radius: 20px;
+    }
+
+    .avatar {
+      height: 230px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      border-radius: 15px;
+      background: #1b1b21;
+      font-size: 45px;
+      font-weight: bold;
+    }
+
+    .member h2 {
+      font-size: 19px;
+      margin-bottom: 7px;
+    }
+
+    .member .role {
+      color: #777;
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    .member p {
+      color: #999;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .socials {
+      display: flex;
+      gap: 8px;
+      margin-top: 20px;
+    }
+
+    .socials a {
+      width: 34px;
+      height: 34px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #333;
+      border-radius: 8px;
+      color: #aaa;
+      text-decoration: none;
+      font-size: 12px;
+    }
+
+    @media (max-width: 900px) {
+      .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 550px) {
+      .team {
+        padding: 70px 16px;
+      }
+
+      .team-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: auto;
+      }
+
+      .avatar {
+        height: 250px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="team">
+
+    <div class="container">
+
+      <div class="heading">
+
+        <span>OUR TEAM</span>
+
+        <h1>Meet The Team.</h1>
+
+        <p>
+          Introduce your team with a clean and modern
+          layout designed for professional websites.
+        </p>
+
+      </div>
+
+      <div class="team-grid">
+
+        <div class="member">
+
+          <div class="avatar">AK</div>
+
+          <h2>Alex Carter</h2>
+
+          <div class="role">Founder & CEO</div>
+
+          <p>
+            Leads the vision and strategy behind
+            the company.
+          </p>
+
+          <div class="socials">
+            <a href="#">IN</a>
+            <a href="#">X</a>
+          </div>
+
+        </div>
+
+
+        <div class="member">
+
+          <div class="avatar">SM</div>
+
+          <h2>Sophia Miller</h2>
+
+          <div class="role">Creative Director</div>
+
+          <p>
+            Creates thoughtful designs and memorable
+            brand experiences.
+          </p>
+
+          <div class="socials">
+            <a href="#">IN</a>
+            <a href="#">X</a>
+          </div>
+
+        </div>
+
+
+        <div class="member">
+
+          <div class="avatar">JD</div>
+
+          <h2>James Davis</h2>
+
+          <div class="role">Lead Developer</div>
+
+          <p>
+            Builds fast, reliable and scalable
+            digital products.
+          </p>
+
+          <div class="socials">
+            <a href="#">IN</a>
+            <a href="#">X</a>
+          </div>
+
+        </div>
+
+
+        <div class="member">
+
+          <div class="avatar">EM</div>
+
+          <h2>Emma Wilson</h2>
+
+          <div class="role">Product Manager</div>
+
+          <p>
+            Turns customer needs into useful
+            product experiences.
+          </p>
+
+          <div class="socials">
+            <a href="#">IN</a>
+            <a href="#">X</a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</body>
+            </html>
