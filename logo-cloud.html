@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Modern Logo Cloud Section</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b0b0f;
+      color: #fff;
+    }
+
+    .logo-cloud {
+      padding: 100px 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .heading {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .heading span {
+      color: #999;
+      font-size: 13px;
+      letter-spacing: 1px;
+    }
+
+    .heading h1 {
+      font-size: clamp(32px, 5vw, 50px);
+      margin: 15px 0;
+    }
+
+    .heading p {
+      color: #888;
+      line-height: 1.6;
+    }
+
+    .logos {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      border-top: 1px solid #29292f;
+      border-left: 1px solid #29292f;
+    }
+
+    .logo {
+      min-height: 130px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-right: 1px solid #29292f;
+      border-bottom: 1px solid #29292f;
+      color: #777;
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      transition: color 0.3s ease;
+    }
+
+    .logo:hover {
+      color: #fff;
+    }
+
+    @media (max-width: 800px) {
+      .logos {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .logo {
+        min-height: 110px;
+      }
+    }
+
+    @media (max-width: 450px) {
+      .logos {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .logo {
+        font-size: 16px;
+      }
+
+      .logo-cloud {
+        padding: 70px 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="logo-cloud">
+
+    <div class="container">
+
+      <div class="heading">
+
+        <span>TRUSTED BY</span>
+
+        <h1>Used By Modern Teams.</h1>
+
+        <p>
+          Showcase your clients, partners or trusted brands
+          with a clean and minimal logo grid.
+        </p>
+
+      </div>
+
+      <div class="logos">
+
+        <div class="logo">NOVA</div>
+
+        <div class="logo">VERTEX</div>
+
+        <div class="logo">LUMEN</div>
+
+        <div class="logo">ORBIT</div>
+
+        <div class="logo">APEX</div>
+
+        <div class="logo">NEXUS</div>
+
+        <div class="logo">PULSE</div>
+
+        <div class="logo">NORTH</div>
+
+        <div class="logo">ATLAS</div>
+
+        <div class="logo">VANTA</div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</body>
+  </html>
