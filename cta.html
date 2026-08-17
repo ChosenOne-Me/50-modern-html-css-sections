@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern CTA Section</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b0b0f;
+      color: white;
+    }
+
+    .cta {
+      padding: 100px 20px;
+    }
+
+    .container {
+      max-width: 1050px;
+      margin: auto;
+    }
+
+    .cta-box {
+      position: relative;
+      overflow: hidden;
+      padding: 90px 40px;
+      text-align: center;
+      background: #15151b;
+      border: 1px solid #303038;
+      border-radius: 28px;
+    }
+
+    .cta-box::before {
+      content: "";
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      left: 50%;
+      top: -180px;
+      transform: translateX(-50%);
+      background: #ffffff;
+      opacity: 0.06;
+      border-radius: 50%;
+      filter: blur(60px);
+    }
+
+    .cta-content {
+      position: relative;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 8px 14px;
+      margin-bottom: 24px;
+      border: 1px solid #3a3a42;
+      border-radius: 999px;
+      color: #aaa;
+      font-size: 13px;
+    }
+
+    h1 {
+      font-size: clamp(40px, 7vw, 70px);
+      line-height: 1.05;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #999;
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 32px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 15px 26px;
+      border-radius: 10px;
+      background: white;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    @media (max-width: 600px) {
+      .cta {
+        padding: 70px 16px;
+      }
+
+      .cta-box {
+        padding: 65px 22px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="cta">
+
+    <div class="container">
+
+      <div class="cta-box">
+
+        <div class="cta-content">
+
+          <div class="badge">
+            GET STARTED
+          </div>
+
+          <h1>
+            Ready to Build Something Great?
+          </h1>
+
+          <p>
+            Turn your idea into a beautiful website
+            with a modern, simple and responsive design.
+          </p>
+
+          <a href="#" class="button">
+            Get Started →
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</body>
+</html>
