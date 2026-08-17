@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Portfolio Section</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b0b0f;
+      color: #fff;
+    }
+
+    .portfolio {
+      padding: 100px 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .heading {
+      max-width: 650px;
+      margin: 0 auto 55px;
+      text-align: center;
+    }
+
+    .heading span {
+      color: #999;
+      font-size: 13px;
+      letter-spacing: 1px;
+    }
+
+    .heading h1 {
+      font-size: clamp(40px, 6vw, 60px);
+      margin: 15px 0;
+    }
+
+    .heading p {
+      color: #888;
+      line-height: 1.6;
+      font-size: 17px;
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .project {
+      overflow: hidden;
+      background: #111116;
+      border: 1px solid #29292f;
+      border-radius: 20px;
+    }
+
+    .project-image {
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #1a1a20;
+      color: #666;
+      font-size: 14px;
+      transition: transform 0.4s ease;
+    }
+
+    .project:hover .project-image {
+      transform: scale(1.03);
+    }
+
+    .project-info {
+      padding: 25px;
+    }
+
+    .category {
+      color: #777;
+      font-size: 12px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .project h2 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .project p {
+      color: #888;
+      line-height: 1.6;
+      font-size: 14px;
+    }
+
+    @media (max-width: 700px) {
+      .portfolio {
+        padding: 70px 16px;
+      }
+
+      .portfolio-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .project-image {
+        height: 240px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="portfolio">
+
+    <div class="container">
+
+      <div class="heading">
+
+        <span>OUR WORK</span>
+
+        <h1>Selected Projects.</h1>
+
+        <p>
+          Showcase your best work with a clean,
+          responsive portfolio grid.
+        </p>
+
+      </div>
+
+      <div class="portfolio-grid">
+
+        <article class="project">
+
+          <div class="project-image">
+            PROJECT IMAGE
+          </div>
+
+          <div class="project-info">
+
+            <div class="category">
+              Branding
+            </div>
+
+            <h2>Nova Studio</h2>
+
+            <p>
+              A modern brand identity and digital
+              experience created for a creative studio.
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <article class="project">
+
+          <div class="project-image">
+            PROJECT IMAGE
+          </div>
+
+          <div class="project-info">
+
+            <div class="category">
+              Web Design
+            </div>
+
+            <h2>Vertex Finance</h2>
+
+            <p>
+              A professional financial platform designed
+              around clarity and usability.
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <article class="project">
+
+          <div class="project-image">
+            PROJECT IMAGE
+          </div>
+
+          <div class="project-info">
+
+            <div class="category">
+              Product
+            </div>
+
+            <h2>Orbit App</h2>
+
+            <p>
+              A focused product experience built for
+              modern teams and growing businesses.
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <article class="project">
+
+          <div class="project-image">
+            PROJECT IMAGE
+          </div>
+
+          <div class="project-info">
+
+            <div class="category">
+              Marketing
+            </div>
+
+            <h2>Lumen Campaign</h2>
+
+            <p>
+              A bold campaign website designed to
+              communicate a new product launch.
+            </p>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</body>
+</html>
