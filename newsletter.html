@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Newsletter Section</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b0b0f;
+      color: #fff;
+    }
+
+    .newsletter {
+      padding: 100px 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .newsletter-box {
+      padding: 75px 40px;
+      text-align: center;
+      background: #111116;
+      border: 1px solid #29292f;
+      border-radius: 25px;
+    }
+
+    .label {
+      color: #999;
+      font-size: 13px;
+      letter-spacing: 1px;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: clamp(38px, 6vw, 60px);
+      margin-bottom: 18px;
+    }
+
+    .description {
+      max-width: 600px;
+      margin: 0 auto 32px;
+      color: #888;
+      line-height: 1.6;
+      font-size: 17px;
+    }
+
+    .form {
+      max-width: 550px;
+      margin: auto;
+      display: flex;
+      gap: 10px;
+    }
+
+    input {
+      flex: 1;
+      min-width: 0;
+      padding: 16px 18px;
+      background: #0b0b0f;
+      color: white;
+      border: 1px solid #333;
+      border-radius: 10px;
+      outline: none;
+      font-size: 15px;
+    }
+
+    input:focus {
+      border-color: #777;
+    }
+
+    button {
+      padding: 16px 22px;
+      border: none;
+      border-radius: 10px;
+      background: white;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .note {
+      margin-top: 18px;
+      color: #666;
+      font-size: 12px;
+    }
+
+    @media (max-width: 600px) {
+      .newsletter {
+        padding: 70px 16px;
+      }
+
+      .newsletter-box {
+        padding: 55px 20px;
+      }
+
+      .form {
+        flex-direction: column;
+      }
+
+      input,
+      button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="newsletter">
+
+    <div class="container">
+
+      <div class="newsletter-box">
+
+        <div class="label">
+          STAY UPDATED
+        </div>
+
+        <h1>
+          Get The Latest Updates.
+        </h1>
+
+        <p class="description">
+          Join our newsletter for useful insights,
+          product updates and fresh ideas delivered
+          straight to your inbox.
+        </p>
+
+        <form class="form">
+
+          <input
+            type="email"
+            placeholder="Enter your email"
+            aria-label="Email address"
+          >
+
+          <button type="submit">
+            Subscribe →
+          </button>
+
+        </form>
+
+        <p class="note">
+          No spam. Unsubscribe anytime.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</body>
+</html>
