@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Hero Section</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b0b0f;
+      color: white;
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .hero-content {
+      max-width: 800px;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 8px 14px;
+      margin-bottom: 24px;
+      border: 1px solid #333;
+      border-radius: 999px;
+      color: #aaa;
+      font-size: 14px;
+    }
+
+    h1 {
+      font-size: clamp(42px, 8vw, 82px);
+      line-height: 1;
+      margin-bottom: 24px;
+    }
+
+    .hero p {
+      max-width: 600px;
+      margin: 0 auto 32px;
+      color: #aaa;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 24px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .primary {
+      background: white;
+      color: black;
+    }
+
+    .secondary {
+      border: 1px solid #444;
+      color: white;
+    }
+
+    @media (max-width: 600px) {
+      .hero {
+        padding: 40px 16px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <div class="badge">
+        Modern Web Design
+      </div>
+
+      <h1>
+        Build Something Amazing.
+      </h1>
+
+      <p>
+        A clean and modern landing page section designed
+        for startups, creators, businesses and modern websites.
+      </p>
+
+      <div class="buttons">
+        <a href="#" class="btn primary">
+          Get Started
+        </a>
+
+        <a href="#" class="btn secondary">
+          Learn More
+        </a>
+      </div>
+
+    </div>
+
+  </section>
+
+</body>
+</html>
