@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>50 Modern HTML/CSS Sections — Demo</title>
+  <title>50 Modern HTML/CSS Sections</title>
 
   <style>
     * {
@@ -15,15 +15,11 @@
     body {
       font-family: Arial, sans-serif;
       background: #0b0b0f;
-      color: #fff;
+      color: white;
     }
 
     section {
-      min-height: 100vh;
-      padding: 80px 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      padding: 100px 20px;
     }
 
     .container {
@@ -35,17 +31,25 @@
     /* HERO */
 
     .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
       text-align: center;
+    }
+
+    .hero-content {
+      max-width: 800px;
+      margin: auto;
     }
 
     .badge {
       display: inline-block;
       padding: 8px 14px;
+      margin-bottom: 25px;
       border: 1px solid #333;
       border-radius: 999px;
       color: #aaa;
       font-size: 14px;
-      margin-bottom: 25px;
     }
 
     .hero h1 {
@@ -62,11 +66,7 @@
       line-height: 1.6;
     }
 
-    /* FEATURES */
-
-    .features {
-      display: block;
-    }
+    /* COMMON HEADING */
 
     .heading {
       text-align: center;
@@ -87,15 +87,18 @@
     .heading p {
       color: #999;
       line-height: 1.6;
+      font-size: 17px;
     }
 
-    .grid {
+    /* FEATURES */
+
+    .features-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 20px;
     }
 
-    .card {
+    .feature-card {
       padding: 30px;
       background: #111116;
       border: 1px solid #28282f;
@@ -115,23 +118,123 @@
       margin-bottom: 25px;
     }
 
-    .card h3 {
+    .feature-card h3 {
       margin-bottom: 12px;
       font-size: 21px;
     }
 
-    .card p {
+    .feature-card p {
       color: #999;
       line-height: 1.6;
     }
 
+    /* PRICING */
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .plan {
+      position: relative;
+      padding: 35px;
+      background: #111116;
+      border: 1px solid #29292f;
+      border-radius: 20px;
+    }
+
+    .plan.popular {
+      border-color: white;
+      transform: translateY(-8px);
+    }
+
+    .popular-label {
+      position: absolute;
+      top: 18px;
+      right: 18px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: white;
+      color: black;
+      font-size: 11px;
+      font-weight: bold;
+    }
+
+    .plan h3 {
+      font-size: 22px;
+      margin-bottom: 15px;
+    }
+
+    .description {
+      color: #888;
+      line-height: 1.5;
+      min-height: 48px;
+    }
+
+    .price {
+      margin: 28px 0;
+      font-size: 42px;
+      font-weight: bold;
+    }
+
+    .price span {
+      font-size: 14px;
+      color: #888;
+      font-weight: normal;
+    }
+
+    .button {
+      display: block;
+      width: 100%;
+      padding: 14px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    .primary {
+      background: white;
+      color: black;
+    }
+
+    .secondary {
+      border: 1px solid #444;
+      color: white;
+    }
+
+    .plan ul {
+      list-style: none;
+    }
+
+    .plan li {
+      padding: 10px 0;
+      color: #aaa;
+      border-bottom: 1px solid #222;
+    }
+
+    .plan li::before {
+      content: "✓";
+      color: white;
+      margin-right: 10px;
+    }
+
+    /* MOBILE */
+
     @media (max-width: 800px) {
-      .grid {
+      .features-grid,
+      .pricing-grid {
         grid-template-columns: 1fr;
       }
 
+      .plan.popular {
+        transform: none;
+      }
+
       section {
-        padding: 60px 20px;
+        padding: 70px 20px;
       }
     }
   </style>
@@ -139,35 +242,41 @@
 
 <body>
 
-  <!-- HERO SECTION -->
+  <!-- HERO -->
 
   <section class="hero">
     <div class="container">
 
-      <div class="badge">
-        50 Modern HTML/CSS Sections
+      <div class="hero-content">
+
+        <div class="badge">
+          50 Modern HTML/CSS Sections
+        </div>
+
+        <h1>
+          Build Better Websites.
+        </h1>
+
+        <p>
+          A collection of clean, responsive and modern
+          landing-page sections for developers, designers
+          and creators.
+        </p>
+
       </div>
-
-      <h1>
-        Build Better Websites.
-      </h1>
-
-      <p>
-        A collection of clean, responsive and modern
-        landing-page sections for developers, designers
-        and creators.
-      </p>
 
     </div>
   </section>
 
 
-  <!-- FEATURES SECTION -->
+  <!-- FEATURES -->
 
-  <section class="features">
+  <section>
+
     <div class="container">
 
       <div class="heading">
+
         <span>FEATURES</span>
 
         <h2>
@@ -178,11 +287,13 @@
           Modern website sections designed to be
           simple, responsive and easy to customize.
         </p>
+
       </div>
 
-      <div class="grid">
+      <div class="features-grid">
 
-        <div class="card">
+        <div class="feature-card">
+
           <div class="number">01</div>
 
           <h3>Simple Design</h3>
@@ -191,9 +302,11 @@
             Clean layouts that are easy to understand
             and customize.
           </p>
+
         </div>
 
-        <div class="card">
+        <div class="feature-card">
+
           <div class="number">02</div>
 
           <h3>Fully Responsive</h3>
@@ -202,9 +315,11 @@
             Designed to look great on phones,
             tablets and desktop screens.
           </p>
+
         </div>
 
-        <div class="card">
+        <div class="feature-card">
+
           <div class="number">03</div>
 
           <h3>Easy to Customize</h3>
@@ -213,12 +328,125 @@
             Change colors, text and spacing without
             complicated frameworks.
           </p>
+
         </div>
 
       </div>
 
     </div>
+
+  </section>
+
+
+  <!-- PRICING -->
+
+  <section>
+
+    <div class="container">
+
+      <div class="heading">
+
+        <span>PRICING</span>
+
+        <h2>
+          Choose Your Plan.
+        </h2>
+
+        <p>
+          Simple pricing designed to give your customers
+          clear choices without unnecessary complexity.
+        </p>
+
+      </div>
+
+      <div class="pricing-grid">
+
+        <div class="plan">
+
+          <h3>Starter</h3>
+
+          <p class="description">
+            Perfect for individuals getting started.
+          </p>
+
+          <div class="price">
+            $19 <span>/month</span>
+          </div>
+
+          <a href="#" class="button secondary">
+            Get Started
+          </a>
+
+          <ul>
+            <li>5 Projects</li>
+            <li>Basic Analytics</li>
+            <li>Email Support</li>
+            <li>Community Access</li>
+          </ul>
+
+        </div>
+
+
+        <div class="plan popular">
+
+          <div class="popular-label">
+            MOST POPULAR
+          </div>
+
+          <h3>Pro</h3>
+
+          <p class="description">
+            Everything you need to grow faster.
+          </p>
+
+          <div class="price">
+            $49 <span>/month</span>
+          </div>
+
+          <a href="#" class="button primary">
+            Start Free Trial
+          </a>
+
+          <ul>
+            <li>Unlimited Projects</li>
+            <li>Advanced Analytics</li>
+            <li>Priority Support</li>
+            <li>Team Collaboration</li>
+          </ul>
+
+        </div>
+
+
+        <div class="plan">
+
+          <h3>Business</h3>
+
+          <p class="description">
+            Powerful tools for growing teams.
+          </p>
+
+          <div class="price">
+            $99 <span>/month</span>
+          </div>
+
+          <a href="#" class="button secondary">
+            Contact Sales
+          </a>
+
+          <ul>
+            <li>Everything in Pro</li>
+            <li>Advanced Security</li>
+            <li>Dedicated Support</li>
+            <li>Custom Solutions</li>
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+
   </section>
 
 </body>
-  </html>
+</html>
