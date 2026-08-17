@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Modern FAQ Section</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b0b0f;
+      color: #fff;
+    }
+
+    .faq {
+      padding: 100px 20px;
+    }
+
+    .container {
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .heading {
+      text-align: center;
+      margin-bottom: 55px;
+    }
+
+    .heading span {
+      color: #999;
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+
+    .heading h1 {
+      font-size: clamp(38px, 6vw, 60px);
+      margin: 15px 0;
+    }
+
+    .heading p {
+      color: #999;
+      line-height: 1.6;
+      font-size: 17px;
+    }
+
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    details {
+      background: #111116;
+      border: 1px solid #28282f;
+      border-radius: 16px;
+      padding: 0 25px;
+    }
+
+    summary {
+      cursor: pointer;
+      list-style: none;
+      padding: 24px 0;
+      font-size: 17px;
+      font-weight: bold;
+      position: relative;
+      padding-right: 35px;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    summary::after {
+      content: "+";
+      position: absolute;
+      right: 0;
+      top: 20px;
+      font-size: 25px;
+      font-weight: normal;
+      color: #999;
+    }
+
+    details[open] summary::after {
+      content: "−";
+    }
+
+    details p {
+      color: #999;
+      line-height: 1.7;
+      padding: 0 0 24px;
+      font-size: 15px;
+    }
+
+    @media (max-width: 600px) {
+      .faq {
+        padding: 70px 16px;
+      }
+
+      details {
+        padding: 0 20px;
+      }
+
+      summary {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="faq">
+
+    <div class="container">
+
+      <div class="heading">
+
+        <span>FAQ</span>
+
+        <h1>Frequently Asked Questions.</h1>
+
+        <p>
+          A clean accordion-style FAQ section for
+          answering common customer questions.
+        </p>
+
+      </div>
+
+      <div class="faq-list">
+
+        <details>
+          <summary>Can I customize this section?</summary>
+
+          <p>
+            Yes. You can easily change the colors,
+            typography, spacing, text and layout using CSS.
+          </p>
+        </details>
+
+        <details>
+          <summary>Is it responsive?</summary>
+
+          <p>
+            Yes. The layout is designed to work across
+            mobile phones, tablets and desktop screens.
+          </p>
+        </details>
+
+        <details>
+          <summary>Does it require a framework?</summary>
+
+          <p>
+            No. This section uses standard HTML and CSS
+            without requiring a frontend framework.
+          </p>
+        </details>
+
+        <details>
+          <summary>Can I use it in my project?</summary>
+
+          <p>
+            The final product will include a clear license
+            explaining how the purchased sections can be used.
+          </p>
+        </details>
+
+        <details>
+          <summary>Will I receive future updates?</summary>
+
+          <p>
+            Future updates can be included with the
+            premium version of the product.
+          </p>
+        </details>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</body>
+        </html>
