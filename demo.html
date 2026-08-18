@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>50 Modern HTML/CSS Sections</title>
 
   <style>
@@ -15,11 +16,14 @@
     body {
       font-family: Arial, sans-serif;
       background: #0b0b0f;
-      color: white;
+      color: #fff;
+      line-height: 1.5;
     }
 
-    section {
-      padding: 100px 20px;
+    .hero {
+      padding: 100px 20px 80px;
+      text-align: center;
+      border-bottom: 1px solid #222;
     }
 
     .container {
@@ -28,34 +32,20 @@
       margin: auto;
     }
 
-    /* HERO */
-
-    .hero {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      text-align: center;
-    }
-
-    .hero-content {
-      max-width: 800px;
-      margin: auto;
-    }
-
     .badge {
       display: inline-block;
       padding: 8px 14px;
-      margin-bottom: 25px;
+      margin-bottom: 22px;
       border: 1px solid #333;
       border-radius: 999px;
       color: #aaa;
-      font-size: 14px;
+      font-size: 13px;
     }
 
-    .hero h1 {
-      font-size: clamp(45px, 8vw, 85px);
+    h1 {
+      font-size: clamp(42px, 8vw, 78px);
       line-height: 1;
-      margin-bottom: 25px;
+      margin-bottom: 22px;
     }
 
     .hero p {
@@ -63,178 +53,110 @@
       margin: auto;
       color: #999;
       font-size: 18px;
-      line-height: 1.6;
     }
 
-    /* COMMON HEADING */
-
-    .heading {
+    .intro {
+      padding: 70px 20px 35px;
       text-align: center;
-      max-width: 650px;
-      margin: 0 auto 55px;
     }
 
-    .heading span {
-      color: #999;
-      font-size: 14px;
+    .intro h2 {
+      font-size: 38px;
+      margin-bottom: 12px;
     }
 
-    .heading h2 {
-      font-size: clamp(36px, 6vw, 60px);
-      margin: 15px 0;
+    .intro p {
+      color: #777;
     }
 
-    .heading p {
-      color: #999;
-      line-height: 1.6;
-      font-size: 17px;
-    }
-
-    /* FEATURES */
-
-    .features-grid {
+    .grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
+      gap: 18px;
+      padding: 0 20px 100px;
     }
 
-    .feature-card {
-      padding: 30px;
+    .card {
+      padding: 28px;
+      min-height: 220px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       background: #111116;
-      border: 1px solid #28282f;
+      border: 1px solid #29292f;
       border-radius: 18px;
+      transition: transform .25s ease, border-color .25s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #555;
     }
 
     .number {
-      width: 48px;
-      height: 48px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: white;
-      color: black;
-      border-radius: 12px;
-      font-weight: bold;
-      margin-bottom: 25px;
+      color: #777;
+      font-size: 13px;
+      letter-spacing: 1px;
     }
 
-    .feature-card h3 {
-      margin-bottom: 12px;
+    .card h3 {
       font-size: 21px;
+      margin: 20px 0 8px;
     }
 
-    .feature-card p {
-      color: #999;
-      line-height: 1.6;
-    }
-
-    /* PRICING */
-
-    .pricing-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-    }
-
-    .plan {
-      position: relative;
-      padding: 35px;
-      background: #111116;
-      border: 1px solid #29292f;
-      border-radius: 20px;
-    }
-
-    .plan.popular {
-      border-color: white;
-      transform: translateY(-8px);
-    }
-
-    .popular-label {
-      position: absolute;
-      top: 18px;
-      right: 18px;
-      padding: 6px 10px;
-      border-radius: 999px;
-      background: white;
-      color: black;
-      font-size: 11px;
-      font-weight: bold;
-    }
-
-    .plan h3 {
-      font-size: 22px;
-      margin-bottom: 15px;
-    }
-
-    .description {
+    .card p {
       color: #888;
-      line-height: 1.5;
-      min-height: 48px;
-    }
-
-    .price {
-      margin: 28px 0;
-      font-size: 42px;
-      font-weight: bold;
-    }
-
-    .price span {
       font-size: 14px;
-      color: #888;
-      font-weight: normal;
+      margin-bottom: 22px;
     }
 
     .button {
-      display: block;
-      width: 100%;
-      padding: 14px;
-      text-align: center;
-      text-decoration: none;
-      border-radius: 10px;
-      font-weight: bold;
-      margin-bottom: 30px;
-    }
-
-    .primary {
-      background: white;
-      color: black;
-    }
-
-    .secondary {
+      display: inline-block;
+      width: fit-content;
+      padding: 10px 15px;
       border: 1px solid #444;
-      color: white;
+      border-radius: 9px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: bold;
     }
 
-    .plan ul {
-      list-style: none;
+    .button:hover {
+      background: #fff;
+      color: #000;
     }
 
-    .plan li {
-      padding: 10px 0;
-      color: #aaa;
-      border-bottom: 1px solid #222;
+    .footer {
+      padding: 45px 20px;
+      text-align: center;
+      border-top: 1px solid #222;
+      color: #666;
+      font-size: 13px;
     }
 
-    .plan li::before {
-      content: "✓";
-      color: white;
-      margin-right: 10px;
+    @media (max-width: 850px) {
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
 
-    /* MOBILE */
+    @media (max-width: 550px) {
+      .hero {
+        padding: 75px 18px 60px;
+      }
 
-    @media (max-width: 800px) {
-      .features-grid,
-      .pricing-grid {
+      .grid {
         grid-template-columns: 1fr;
+        padding: 0 16px 70px;
       }
 
-      .plan.popular {
-        transform: none;
+      .card {
+        min-height: 190px;
       }
 
-      section {
-        padding: 70px 20px;
+      .intro {
+        padding-top: 55px;
       }
     }
   </style>
@@ -244,209 +166,549 @@
 
   <!-- HERO -->
 
-  <section class="hero">
+  <header class="hero">
+
     <div class="container">
 
-      <div class="hero-content">
-
-        <div class="badge">
-          50 Modern HTML/CSS Sections
-        </div>
-
-        <h1>
-          Build Better Websites.
-        </h1>
-
-        <p>
-          A collection of clean, responsive and modern
-          landing-page sections for developers, designers
-          and creators.
-        </p>
-
+      <div class="badge">
+        HTML + CSS • No Framework Required
       </div>
+
+      <h1>
+        50 Modern<br>
+        Landing Page Sections.
+      </h1>
+
+      <p>
+        A collection of clean, responsive and
+        customizable website sections for developers,
+        designers and creators.
+      </p>
 
     </div>
-  </section>
+
+  </header>
 
 
-  <!-- FEATURES -->
+  <!-- INTRO -->
 
-  <section>
+  <section class="intro">
 
     <div class="container">
 
-      <div class="heading">
+      <h2>Explore The Collection</h2>
 
-        <span>FEATURES</span>
-
-        <h2>
-          Everything You Need.
-        </h2>
-
-        <p>
-          Modern website sections designed to be
-          simple, responsive and easy to customize.
-        </p>
-
-      </div>
-
-      <div class="features-grid">
-
-        <div class="feature-card">
-
-          <div class="number">01</div>
-
-          <h3>Simple Design</h3>
-
-          <p>
-            Clean layouts that are easy to understand
-            and customize.
-          </p>
-
-        </div>
-
-        <div class="feature-card">
-
-          <div class="number">02</div>
-
-          <h3>Fully Responsive</h3>
-
-          <p>
-            Designed to look great on phones,
-            tablets and desktop screens.
-          </p>
-
-        </div>
-
-        <div class="feature-card">
-
-          <div class="number">03</div>
-
-          <h3>Easy to Customize</h3>
-
-          <p>
-            Change colors, text and spacing without
-            complicated frameworks.
-          </p>
-
-        </div>
-
-      </div>
+      <p>
+        22 sections are currently available.
+        More sections are being added.
+      </p>
 
     </div>
 
   </section>
 
 
-  <!-- PRICING -->
+  <!-- SECTION GRID -->
 
-  <section>
+  <main class="container">
 
-    <div class="container">
+    <div class="grid">
 
-      <div class="heading">
 
-        <span>PRICING</span>
+      <!-- 01 -->
 
-        <h2>
-          Choose Your Plan.
-        </h2>
+      <article class="card">
 
-        <p>
-          Simple pricing designed to give your customers
-          clear choices without unnecessary complexity.
-        </p>
+        <div class="number">01 / HERO</div>
 
-      </div>
+        <div>
+          <h3>Modern Hero</h3>
 
-      <div class="pricing-grid">
-
-        <div class="plan">
-
-          <h3>Starter</h3>
-
-          <p class="description">
-            Perfect for individuals getting started.
+          <p>
+            Clean headline and CTA area for landing pages.
           </p>
-
-          <div class="price">
-            $19 <span>/month</span>
-          </div>
-
-          <a href="#" class="button secondary">
-            Get Started
-          </a>
-
-          <ul>
-            <li>5 Projects</li>
-            <li>Basic Analytics</li>
-            <li>Email Support</li>
-            <li>Community Access</li>
-          </ul>
-
         </div>
 
+        <a class="button"
+           href="index.html">
+          Preview →
+        </a>
 
-        <div class="plan popular">
+      </article>
 
-          <div class="popular-label">
-            MOST POPULAR
-          </div>
 
-          <h3>Pro</h3>
+      <!-- 02 -->
 
-          <p class="description">
-            Everything you need to grow faster.
+      <article class="card">
+
+        <div class="number">02 / FEATURES</div>
+
+        <div>
+          <h3>Features</h3>
+
+          <p>
+            Three-column feature cards for products and services.
           </p>
-
-          <div class="price">
-            $49 <span>/month</span>
-          </div>
-
-          <a href="#" class="button primary">
-            Start Free Trial
-          </a>
-
-          <ul>
-            <li>Unlimited Projects</li>
-            <li>Advanced Analytics</li>
-            <li>Priority Support</li>
-            <li>Team Collaboration</li>
-          </ul>
-
         </div>
 
+        <a class="button"
+           href="features.html">
+          Preview →
+        </a>
 
-        <div class="plan">
+      </article>
 
-          <h3>Business</h3>
 
-          <p class="description">
-            Powerful tools for growing teams.
+      <!-- 03 -->
+
+      <article class="card">
+
+        <div class="number">03 / PRICING</div>
+
+        <div>
+          <h3>Pricing</h3>
+
+          <p>
+            Three-tier pricing layout with highlighted plan.
           </p>
-
-          <div class="price">
-            $99 <span>/month</span>
-          </div>
-
-          <a href="#" class="button secondary">
-            Contact Sales
-          </a>
-
-          <ul>
-            <li>Everything in Pro</li>
-            <li>Advanced Security</li>
-            <li>Dedicated Support</li>
-            <li>Custom Solutions</li>
-          </ul>
-
         </div>
 
-      </div>
+        <a class="button"
+           href="pricing.html">
+          Preview →
+        </a>
+
+      </article>
+
+
+      <!-- 04 -->
+
+      <article class="card">
+
+        <div class="number">04 / TESTIMONIALS</div>
+
+        <div>
+          <h3>Testimonials</h3>
+
+          <p>
+            Customer reviews with ratings and profile details.
+          </p>
+        </div>
+
+        <a class="button"
+           href="testimonials.html">
+          Preview →
+        </a>
+
+      </article>
+
+
+      <!-- 05 -->
+
+      <article class="card">
+
+        <div class="number">05 / FAQ</div>
+
+        <div>
+          <h3>FAQ Accordion</h3>
+
+          <p>
+            Interactive expandable questions and answers.
+          </p>
+        </div>
+
+        <a class="button"
+           href="faq.html">
+          Preview →
+        </a>
+
+      </article>
+
+
+      <!-- 06 -->
+
+      <article class="card">
+
+        <div class="number">06 / CTA</div>
+
+        <div>
+          <h3>Call To Action</h3>
+
+          <p>
+            High-impact CTA section for driving conversions.
+          </p>
+        </div>
+
+        <a class="button"
+           href="cta.html">
+          Preview →
+        </a>
+
+      </article>
+
+
+      <!-- 07 -->
+
+      <article class="card">
+
+        <div class="number">07 / ABOUT</div>
+
+        <div>
+          <h3>About</h3>
+
+          <p>
+            Company introduction with mission and statistics.
+          </p>
+        </div>
+
+        <a class="button"
+           href="about.html">
+          Preview →
+        </a>
+
+      </article>
+
+
+      <!-- 08 -->
+
+      <article class="card">
+
+        <div class="number">08 / TEAM</div>
+
+        <div>
+          <h3>Team</h3>
+
+          <p>
+            Professional team member profile cards.
+          </p>
+        </div>
+
+        <a class="button"
+           href="team.html">
+          Preview →
+        </a>
+
+      </article>
+
+
+      <!-- 09 -->
+
+      <article class="card">
+
+        <div class="number">09 / CONTACT</div>
+
+        <div>
+          <h3>Contact</h3>
+
+          <p>
+            Contact information and responsive message form.
+          </p>
+        </div>
+
+        <a class="button"
+           href="contact.html">
+          Preview →
+        </a>
+
+      </article>
+
+
+      <!-- 10 -->
+
+      <article class="card">
+
+        <div class="number">10 / BLOG</div>
+
+        <div>
+          <h3>Blog</h3>
+
+          <p>
+            Three-card article and content showcase.
+          </p>
+        </div>
+
+        <a class="button"
+           href="blog.html">
+          Preview →
+        </a>
+
+      </article>
+
+
+      <!-- 11 -->
+
+      <article class="card">
+
+        <div class="number">11 / LOGOS</div>
+
+        <div>
+          <h3>Logo Cloud</h3>
+
+          <p>
+            Clean client and partner logo grid.
+          </p>
+        </div>
+
+        <a class="button"
+           href="logo-cloud.html">
+          Preview →
+        </a>
+
+      </article>
+
+
+      <!-- 12 -->
+
+      <article class="card">
+
+        <div class="number">12 / STATS</div>
+
+        <div>
+          <h3>Statistics</h3>
+
+          <p>
+            Highlight important business numbers and results.
+          </p>
+        </div>
+
+        <a class="button"
+           href="stats.html">
+          Preview →
+        </a>
+
+      </article>
+
+
+      <!-- 13 -->
+
+      <article class="card">
+
+        <div class="number">13 / PROCESS</div>
+
+        <div>
+          <h3>How It Works</h3>
+
+          <p>
+            Four-step process for explaining workflows.
+          </p>
+        </div>
+
+        <a class="button"
+           href="process.html">
+          Preview →
+        </a>
+
+      </article>
+
+
+      <!-- 14 -->
+
+      <article class="card">
+
+        <div class="number">14 / PORTFOLIO</div>
+
+        <div>
+          <h3>Portfolio</h3>
+
+          <p>
+            Responsive project showcase grid.
+          </p>
+        </div>
+
+        <a class="button"
+           href="portfolio.html">
+          Preview →
+        </a>
+
+      </article>
+
+
+      <!-- 15 -->
+
+      <article class="card">
+
+        <div class="number">15 / NEWSLETTER</div>
+
+        <div>
+          <h3>Newsletter</h3>
+
+          <p>
+            Email subscription section with responsive form.
+          </p>
+        </div>
+
+        <a class="button"
+           href="newsletter.html">
+          Preview →
+        </a>
+
+      </article>
+
+
+      <!-- 16 -->
+
+      <article class="card">
+
+        <div class="number">16 / COMPARISON</div>
+
+        <div>
+          <h3>Comparison Table</h3>
+
+          <p>
+            Compare plans and features in a responsive table.
+          </p>
+        </div>
+
+        <a class="button"
+           href="comparison.html">
+          Preview →
+        </a>
+
+      </article>
+
+
+      <!-- 17 -->
+
+      <article class="card">
+
+        <div class="number">17 / TIMELINE</div>
+
+        <div>
+          <h3>Timeline</h3>
+
+          <p>
+            Vertical timeline for milestones and company history.
+          </p>
+        </div>
+
+        <a class="button"
+           href="timeline.html">
+          Preview →
+        </a>
+
+      </article>
+
+
+      <!-- 18 -->
+
+      <article class="card">
+
+        <div class="number">18 / FOUNDER</div>
+
+        <div>
+          <h3>Founder Spotlight</h3>
+
+          <p>
+            Personal founder story with portrait area.
+          </p>
+        </div>
+
+        <a class="button"
+           href="founder.html">
+          Preview →
+        </a>
+
+      </article>
+
+
+      <!-- 19 -->
+
+      <article class="card">
+
+        <div class="number">19 / CASE STUDY</div>
+
+        <div>
+          <h3>Case Study</h3>
+
+          <p>
+            Showcase project results and measurable outcomes.
+          </p>
+        </div>
+
+        <a class="button"
+           href="case-study.html">
+          Preview →
+        </a>
+
+      </article>
+
+
+      <!-- 20 -->
+
+      <article class="card">
+
+        <div class="number">20 / VIDEO</div>
+
+        <div>
+          <h3>Video Hero</h3>
+
+          <p>
+            Large cinematic video-focused landing section.
+          </p>
+        </div>
+
+        <a class="button"
+           href="video-hero.html">
+          Preview →
+        </a>
+
+      </article>
+
+
+      <!-- 21 -->
+
+      <article class="card">
+
+        <div class="number">21 / FAQ 2</div>
+
+        <div>
+          <h3>Two-Column FAQ</h3>
+
+          <p>
+            FAQ layout with introduction and accordion.
+          </p>
+        </div>
+
+        <a class="button"
+           href="faq-two-column.html">
+          Preview →
+        </a>
+
+      </article>
+
+
+      <!-- 22 -->
+
+      <article class="card">
+
+        <div class="number">22 / PRODUCT</div>
+
+        <div>
+          <h3>Product Showcase</h3>
+
+          <p>
+            Product benefits with a modern device mockup.
+          </p>
+        </div>
+
+        <a class="button"
+           href="product-showcase.html">
+          Preview →
+        </a>
+
+      </article>
+
 
     </div>
 
-  </section>
+  </main>
+
+
+  <footer class="footer">
+
+    50 Modern HTML/CSS Sections · 22 sections available
+
+  </footer>
 
 </body>
-</html>
+  </html>
