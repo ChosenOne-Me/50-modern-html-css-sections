@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Modern Logo Marquee</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b0b0f;
+      color: #fff;
+    }
+
+    .marquee-section {
+      padding: 100px 0;
+      overflow: hidden;
+    }
+
+    .heading {
+      text-align: center;
+      padding: 0 20px;
+      margin-bottom: 45px;
+    }
+
+    .heading span {
+      color: #777;
+      font-size: 13px;
+      letter-spacing: 1px;
+    }
+
+    .heading h1 {
+      font-size: clamp(36px, 6vw, 58px);
+      margin-top: 15px;
+    }
+
+    .marquee {
+      width: 100%;
+      overflow: hidden;
+      border-top: 1px solid #29292f;
+      border-bottom: 1px solid #29292f;
+    }
+
+    .track {
+      display: flex;
+      width: max-content;
+      animation: scroll 22s linear infinite;
+    }
+
+    .logo {
+      min-width: 180px;
+      height: 110px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-right: 1px solid #29292f;
+      color: #666;
+      font-size: 18px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    @keyframes scroll {
+      from {
+        transform: translateX(0);
+      }
+
+      to {
+        transform: translateX(-50%);
+      }
+    }
+
+    .note {
+      text-align: center;
+      color: #555;
+      font-size: 12px;
+      margin-top: 25px;
+    }
+
+    @media (max-width: 600px) {
+      .marquee-section {
+        padding: 70px 0;
+      }
+
+      .logo {
+        min-width: 140px;
+        height: 90px;
+        font-size: 15px;
+      }
+
+      .track {
+        animation-duration: 18s;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .track {
+        animation: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="marquee-section">
+
+    <div class="heading">
+
+      <span>TRUSTED BY</span>
+
+      <h1>Teams Building The Future.</h1>
+
+    </div>
+
+
+    <div class="marquee">
+
+      <div class="track">
+
+        <div class="logo">NOVA</div>
+        <div class="logo">VERTEX</div>
+        <div class="logo">LUMEN</div>
+        <div class="logo">ORBIT</div>
+        <div class="logo">ATLAS</div>
+        <div class="logo">NORTH</div>
+        <div class="logo">PULSE</div>
+        <div class="logo">FRAME</div>
+
+        <div class="logo">NOVA</div>
+        <div class="logo">VERTEX</div>
+        <div class="logo">LUMEN</div>
+        <div class="logo">ORBIT</div>
+        <div class="logo">ATLAS</div>
+        <div class="logo">NORTH</div>
+        <div class="logo">PULSE</div>
+        <div class="logo">FRAME</div>
+
+      </div>
+
+    </div>
+
+
+    <div class="note">
+      Replace these text logos with your own brand logos.
+    </div>
+
+  </section>
+
+</body>
+</html>
