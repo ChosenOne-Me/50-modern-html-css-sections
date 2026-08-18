@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Modern Services Section</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b0b0f;
+      color: #fff;
+    }
+
+    .services {
+      padding: 100px 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .heading {
+      max-width: 680px;
+      margin: 0 auto 55px;
+      text-align: center;
+    }
+
+    .heading span {
+      color: #999;
+      font-size: 13px;
+      letter-spacing: 1px;
+    }
+
+    .heading h1 {
+      font-size: clamp(40px, 6vw, 62px);
+      line-height: 1.05;
+      margin: 15px 0;
+    }
+
+    .heading p {
+      color: #888;
+      font-size: 17px;
+      line-height: 1.6;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .service {
+      padding: 30px;
+      min-height: 280px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: #111116;
+      border: 1px solid #29292f;
+      border-radius: 20px;
+      transition: transform 0.25s ease, border-color 0.25s ease;
+    }
+
+    .service:hover {
+      transform: translateY(-5px);
+      border-color: #555;
+    }
+
+    .icon {
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #444;
+      border-radius: 13px;
+      color: #fff;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .service h2 {
+      margin: 25px 0 10px;
+      font-size: 22px;
+    }
+
+    .service p {
+      color: #888;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .link {
+      display: inline-block;
+      margin-top: 25px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    @media (max-width: 850px) {
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 550px) {
+      .services {
+        padding: 70px 16px;
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .service {
+        min-height: 240px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="services">
+
+    <div class="container">
+
+      <div class="heading">
+
+        <span>OUR SERVICES</span>
+
+        <h1>What We Do Best.</h1>
+
+        <p>
+          Present your core services in a clean,
+          professional and easy-to-scan layout.
+        </p>
+
+      </div>
+
+      <div class="services-grid">
+
+        <article class="service">
+
+          <div>
+
+            <div class="icon">01</div>
+
+            <h2>Web Design</h2>
+
+            <p>
+              Create modern and engaging websites
+              designed around your brand and audience.
+            </p>
+
+          </div>
+
+          <a href="#" class="link">
+            Learn More →
+          </a>
+
+        </article>
+
+
+        <article class="service">
+
+          <div>
+
+            <div class="icon">02</div>
+
+            <h2>Development</h2>
+
+            <p>
+              Build fast, responsive and reliable
+              digital experiences using modern technology.
+            </p>
+
+          </div>
+
+          <a href="#" class="link">
+            Learn More →
+          </a>
+
+        </article>
+
+
+        <article class="service">
+
+          <div>
+
+            <div class="icon">03</div>
+
+            <h2>Brand Strategy</h2>
+
+            <p>
+              Develop a clear brand direction that
+              helps your business stand out.
+            </p>
+
+          </div>
+
+          <a href="#" class="link">
+            Learn More →
+          </a>
+
+        </article>
+
+
+        <article class="service">
+
+          <div>
+
+            <div class="icon">04</div>
+
+            <h2>UI/UX Design</h2>
+
+            <p>
+              Design intuitive interfaces that make
+              products easier and more enjoyable to use.
+            </p>
+
+          </div>
+
+          <a href="#" class="link">
+            Learn More →
+          </a>
+
+        </article>
+
+
+        <article class="service">
+
+          <div>
+
+            <div class="icon">05</div>
+
+            <h2>SEO</h2>
+
+            <p>
+              Improve your website's visibility and
+              help the right audience discover your brand.
+            </p>
+
+          </div>
+
+          <a href="#" class="link">
+            Learn More →
+          </a>
+
+        </article>
+
+
+        <article class="service">
+
+          <div>
+
+            <div class="icon">06</div>
+
+            <h2>Consulting</h2>
+
+            <p>
+              Get practical digital strategy and
+              guidance to move your project forward.
+            </p>
+
+          </div>
+
+          <a href="#" class="link">
+            Learn More →
+          </a>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</body>
+  </html>
