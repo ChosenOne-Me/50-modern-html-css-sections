@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Modern Video Hero Section</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b0b0f;
+      color: #fff;
+    }
+
+    .video-hero {
+      padding: 80px 20px 100px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .heading {
+      max-width: 750px;
+      margin: 0 auto 45px;
+      text-align: center;
+    }
+
+    .heading span {
+      color: #999;
+      font-size: 13px;
+      letter-spacing: 1px;
+    }
+
+    .heading h1 {
+      font-size: clamp(40px, 7vw, 72px);
+      line-height: 1.05;
+      margin: 15px 0 20px;
+    }
+
+    .heading p {
+      color: #888;
+      font-size: 17px;
+      line-height: 1.6;
+    }
+
+    .video-card {
+      position: relative;
+      overflow: hidden;
+      min-height: 520px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #15151b;
+      border: 1px solid #29292f;
+      border-radius: 25px;
+    }
+
+    .video-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: 30px;
+    }
+
+    .play {
+      width: 75px;
+      height: 75px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 25px;
+      border: 1px solid #555;
+      border-radius: 50%;
+      background: #fff;
+      color: #000;
+      font-size: 24px;
+      padding-left: 4px;
+    }
+
+    .video-content h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .video-content p {
+      color: #777;
+      font-size: 14px;
+    }
+
+    .visual {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at center, #292930 0%, #15151b 45%, #0f0f14 100%);
+    }
+
+    .visual::after {
+      content: "";
+      position: absolute;
+      inset: 20px;
+      border: 1px solid #303038;
+      border-radius: 18px;
+    }
+
+    @media (max-width: 600px) {
+      .video-hero {
+        padding: 65px 16px 70px;
+      }
+
+      .video-card {
+        min-height: 380px;
+      }
+
+      .play {
+        width: 65px;
+        height: 65px;
+      }
+
+      .video-content h2 {
+        font-size: 23px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="video-hero">
+
+    <div class="container">
+
+      <div class="heading">
+
+        <span>WATCH & DISCOVER</span>
+
+        <h1>
+          See It In Action.
+        </h1>
+
+        <p>
+          A cinematic video-focused hero section designed
+          for products, services, launches and creative brands.
+        </p>
+
+      </div>
+
+      <div class="video-card">
+
+        <div class="visual"></div>
+
+        <div class="video-content">
+
+          <div class="play">
+            ▶
+          </div>
+
+          <h2>
+            Product Preview
+          </h2>
+
+          <p>
+            Replace this area with your own video.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</body>
+</html>
