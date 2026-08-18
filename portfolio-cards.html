@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Portfolio Case Studies</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b0b0f;
+      color: #fff;
+    }
+
+    .portfolio {
+      padding: 100px 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 30px;
+      margin-bottom: 50px;
+    }
+
+    .label {
+      color: #999;
+      font-size: 13px;
+      letter-spacing: 1px;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      font-size: clamp(40px, 6vw, 60px);
+      line-height: 1.05;
+    }
+
+    .heading p {
+      max-width: 420px;
+      color: #888;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .project {
+      overflow: hidden;
+      background: #111116;
+      border: 1px solid #29292f;
+      border-radius: 20px;
+    }
+
+    .image {
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #19191f;
+      color: #555;
+      font-size: 13px;
+      transition: transform .3s ease;
+    }
+
+    .project:hover .image {
+      transform: scale(1.03);
+    }
+
+    .content {
+      padding: 25px;
+    }
+
+    .category {
+      color: #777;
+      font-size: 11px;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+
+    .content h2 {
+      font-size: 23px;
+      margin-bottom: 10px;
+    }
+
+    .content p {
+      color: #888;
+      font-size: 14px;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .link {
+      color: #fff;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    @media (max-width: 700px) {
+      .portfolio {
+        padding: 70px 16px;
+      }
+
+      .heading {
+        display: block;
+      }
+
+      .heading p {
+        margin-top: 20px;
+      }
+
+      .projects {
+        grid-template-columns: 1fr;
+      }
+
+      .image {
+        height: 250px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="portfolio">
+
+    <div class="container">
+
+      <div class="heading">
+
+        <div>
+          <div class="label">SELECTED WORK</div>
+
+          <h1>
+            Work That Speaks.
+          </h1>
+        </div>
+
+        <p>
+          Showcase your best projects or case studies
+          with a clean, visual portfolio layout.
+        </p>
+
+      </div>
+
+
+      <div class="projects">
+
+        <article class="project">
+
+          <div class="image">
+            PROJECT IMAGE 01
+          </div>
+
+          <div class="content">
+
+            <div class="category">
+              BRANDING · WEB DESIGN
+            </div>
+
+            <h2>
+              Nova Finance
+            </h2>
+
+            <p>
+              A modern digital experience designed to
+              make financial tools feel simple and accessible.
+            </p>
+
+            <a href="#" class="link">
+              View Case Study →
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <article class="project">
+
+          <div class="image">
+            PROJECT IMAGE 02
+          </div>
+
+          <div class="content">
+
+            <div class="category">
+              PRODUCT · UI/UX
+            </div>
+
+            <h2>
+              Vertex Platform
+            </h2>
+
+            <p>
+              A focused product interface built around
+              clarity, speed and effortless navigation.
+            </p>
+
+            <a href="#" class="link">
+              View Case Study →
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <article class="project">
+
+          <div class="image">
+            PROJECT IMAGE 03
+          </div>
+
+          <div class="content">
+
+            <div class="category">
+              E-COMMERCE · DEVELOPMENT
+            </div>
+
+            <h2>
+              Lumen Store
+            </h2>
+
+            <p>
+              A high-converting storefront created to
+              deliver a smooth shopping experience.
+            </p>
+
+            <a href="#" class="link">
+              View Case Study →
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <article class="project">
+
+          <div class="image">
+            PROJECT IMAGE 04
+          </div>
+
+          <div class="content">
+
+            <div class="category">
+              CREATIVE · DIGITAL
+            </div>
+
+            <h2>
+              Orbit Studio
+            </h2>
+
+            <p>
+              A bold digital identity and website created
+              for a modern creative studio.
+            </p>
+
+            <a href="#" class="link">
+              View Case Study →
+            </a>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</body>
+</html>
