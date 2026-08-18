@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feature Comparison Cards</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b0b0f;
+      color: #fff;
+    }
+
+    .comparison {
+      padding: 100px 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .heading {
+      max-width: 700px;
+      margin: 0 auto 55px;
+      text-align: center;
+    }
+
+    .heading span {
+      color: #999;
+      font-size: 13px;
+      letter-spacing: 1px;
+    }
+
+    .heading h1 {
+      font-size: clamp(40px, 6vw, 60px);
+      line-height: 1.05;
+      margin: 15px 0;
+    }
+
+    .heading p {
+      color: #888;
+      font-size: 17px;
+      line-height: 1.6;
+    }
+
+    .comparison-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .card {
+      padding: 30px;
+      background: #111116;
+      border: 1px solid #29292f;
+      border-radius: 20px;
+    }
+
+    .card.featured {
+      border-color: #555;
+      background: #15151b;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 6px 10px;
+      margin-bottom: 22px;
+      border-radius: 999px;
+      background: #29292f;
+      color: #aaa;
+      font-size: 10px;
+      letter-spacing: 1px;
+    }
+
+    .featured .tag {
+      background: #fff;
+      color: #000;
+    }
+
+    .card h2 {
+      font-size: 23px;
+      margin-bottom: 10px;
+    }
+
+    .description {
+      color: #888;
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 25px;
+    }
+
+    .price {
+      font-size: 38px;
+      font-weight: bold;
+      margin-bottom: 25px;
+    }
+
+    .price span {
+      color: #777;
+      font-size: 13px;
+      font-weight: normal;
+    }
+
+    .features {
+      display: flex;
+      flex-direction: column;
+      gap: 13px;
+      padding-top: 25px;
+      border-top: 1px solid #29292f;
+    }
+
+    .feature {
+      color: #aaa;
+      font-size: 14px;
+    }
+
+    .feature::before {
+      content: "✓";
+      color: #fff;
+      margin-right: 9px;
+    }
+
+    .button {
+      display: block;
+      margin-top: 28px;
+      padding: 13px;
+      text-align: center;
+      border: 1px solid #444;
+      border-radius: 9px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .featured .button {
+      background: #fff;
+      color: #000;
+      border-color: #fff;
+    }
+
+    @media (max-width: 800px) {
+      .comparison {
+        padding: 70px 16px;
+      }
+
+      .comparison-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="comparison">
+
+    <div class="container">
+
+      <div class="heading">
+
+        <span>COMPARE PLANS</span>
+
+        <h1>Choose What Fits You.</h1>
+
+        <p>
+          Compare different plans using clean feature
+          cards that make the differences easy to understand.
+        </p>
+
+      </div>
+
+      <div class="comparison-grid">
+
+        <article class="card">
+
+          <div class="tag">STARTER</div>
+
+          <h2>Basic</h2>
+
+          <p class="description">
+            For individuals getting started with
+            their next project.
+          </p>
+
+          <div class="price">
+            $19 <span>/ month</span>
+          </div>
+
+          <div class="features">
+            <div class="feature">5 projects</div>
+            <div class="feature">Basic analytics</div>
+            <div class="feature">Email support</div>
+            <div class="feature">1 team member</div>
+          </div>
+
+          <a href="#" class="button">
+            Choose Basic
+          </a>
+
+        </article>
+
+
+        <article class="card featured">
+
+          <div class="tag">RECOMMENDED</div>
+
+          <h2>Professional</h2>
+
+          <p class="description">
+            For growing teams that need more
+            powerful tools and flexibility.
+          </p>
+
+          <div class="price">
+            $49 <span>/ month</span>
+          </div>
+
+          <div class="features">
+            <div class="feature">Unlimited projects</div>
+            <div class="feature">Advanced analytics</div>
+            <div class="feature">Priority support</div>
+            <div class="feature">10 team members</div>
+          </div>
+
+          <a href="#" class="button">
+            Choose Professional
+          </a>
+
+        </article>
+
+
+        <article class="card">
+
+          <div class="tag">BUSINESS</div>
+
+          <h2>Enterprise</h2>
+
+          <p class="description">
+            For established businesses that need
+            advanced capabilities and support.
+          </p>
+
+          <div class="price">
+            $99 <span>/ month</span>
+          </div>
+
+          <div class="features">
+            <div class="feature">Unlimited projects</div>
+            <div class="feature">Advanced security</div>
+            <div class="feature">Dedicated support</div>
+            <div class="feature">Unlimited team</div>
+          </div>
+
+          <a href="#" class="button">
+            Choose Enterprise
+          </a>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</body>
+          </html>
