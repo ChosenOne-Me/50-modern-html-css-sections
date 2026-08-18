@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Modern Blog Featured Section</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b0b0f;
+      color: #fff;
+    }
+
+    .blog {
+      padding: 100px 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 30px;
+      margin-bottom: 45px;
+    }
+
+    .label {
+      color: #999;
+      font-size: 13px;
+      letter-spacing: 1px;
+      margin-bottom: 15px;
+    }
+
+    .heading h1 {
+      font-size: clamp(40px, 6vw, 60px);
+      line-height: 1.05;
+    }
+
+    .heading p {
+      max-width: 400px;
+      color: #888;
+      line-height: 1.6;
+      font-size: 15px;
+    }
+
+    .featured {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      overflow: hidden;
+      background: #111116;
+      border: 1px solid #29292f;
+      border-radius: 22px;
+      margin-bottom: 18px;
+    }
+
+    .featured-image {
+      min-height: 390px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #19191f;
+      color: #666;
+      font-size: 14px;
+    }
+
+    .featured-content {
+      padding: 45px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .category {
+      color: #777;
+      font-size: 11px;
+      letter-spacing: 1px;
+      margin-bottom: 18px;
+    }
+
+    .featured-content h2 {
+      font-size: 32px;
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
+
+    .featured-content p {
+      color: #888;
+      line-height: 1.7;
+      font-size: 15px;
+      margin-bottom: 25px;
+    }
+
+    .meta {
+      color: #666;
+      font-size: 12px;
+      margin-bottom: 25px;
+    }
+
+    .button {
+      width: fit-content;
+      padding: 13px 19px;
+      background: #fff;
+      color: #000;
+      border-radius: 9px;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .posts {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .post {
+      padding: 25px;
+      background: #111116;
+      border: 1px solid #29292f;
+      border-radius: 18px;
+    }
+
+    .post h3 {
+      font-size: 19px;
+      line-height: 1.4;
+      margin: 15px 0 10px;
+    }
+
+    .post p {
+      color: #777;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    .post .category {
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 800px) {
+      .blog {
+        padding: 70px 16px;
+      }
+
+      .heading {
+        display: block;
+      }
+
+      .heading p {
+        margin-top: 18px;
+      }
+
+      .featured {
+        grid-template-columns: 1fr;
+      }
+
+      .featured-image {
+        min-height: 260px;
+      }
+
+      .featured-content {
+        padding: 30px 25px;
+      }
+
+      .posts {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="blog">
+
+    <div class="container">
+
+      <div class="heading">
+
+        <div>
+          <div class="label">FROM THE BLOG</div>
+
+          <h1>
+            Ideas Worth Sharing.
+          </h1>
+        </div>
+
+        <p>
+          Share insights, stories and useful ideas
+          with a clean editorial-style layout.
+        </p>
+
+      </div>
+
+
+      <article class="featured">
+
+        <div class="featured-image">
+          FEATURED ARTICLE IMAGE
+        </div>
+
+        <div class="featured-content">
+
+          <div class="category">
+            DESIGN · 8 MIN READ
+          </div>
+
+          <h2>
+            How Simple Design Creates Better Digital Products
+          </h2>
+
+          <p>
+            Explore the principles behind creating
+            digital experiences that feel clear,
+            useful and effortless.
+          </p>
+
+          <div class="meta">
+            By Alex Morgan · June 12, 2026
+          </div>
+
+          <a href="#" class="button">
+            Read Article →
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <div class="posts">
+
+        <article class="post">
+
+          <div class="category">
+            PRODUCT
+          </div>
+
+          <h3>
+            Building Products People Actually Want
+          </h3>
+
+          <p>
+            A practical look at understanding users
+            before building new features.
+          </p>
+
+        </article>
+
+
+        <article class="post">
+
+          <div class="category">
+            BUSINESS
+          </div>
+
+          <h3>
+            Five Ways To Improve Your Landing Page
+          </h3>
+
+          <p>
+            Small changes that can make your website
+            clearer and more effective.
+          </p>
+
+        </article>
+
+
+        <article class="post">
+
+          <div class="category">
+            DESIGN
+          </div>
+
+          <h3>
+            Why Less Can Be More
+          </h3>
+
+          <p>
+            Learn how intentional simplicity can
+            improve the user experience.
+          </p>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</body>
+            </html>
