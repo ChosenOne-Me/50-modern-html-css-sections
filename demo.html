@@ -3,267 +3,203 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>50 Modern HTML/CSS Sections</title>
 
 <style>
-
-*{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
-}
-
-body{
-  font-family:Arial,Helvetica,sans-serif;
-  background:#08080b;
-  color:#fff;
-}
-
-a{
-  text-decoration:none;
-  color:inherit;
-}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;background:#08080b;color:#fff}
+a{text-decoration:none;color:inherit}
 
 .hero{
-  padding:100px 20px 80px;
-  text-align:center;
-  border-bottom:1px solid #25252b;
+padding:100px 20px 80px;
+text-align:center;
+border-bottom:1px solid #25252b
 }
 
 .badge{
-  display:inline-block;
-  padding:8px 14px;
-  border:1px solid #333;
-  border-radius:999px;
-  color:#aaa;
-  font-size:11px;
-  letter-spacing:1px;
-  margin-bottom:25px;
+display:inline-block;
+padding:8px 14px;
+border:1px solid #333;
+border-radius:999px;
+color:#aaa;
+font-size:11px;
+letter-spacing:1px;
+margin-bottom:25px
 }
 
 .hero h1{
-  max-width:850px;
-  margin:auto;
-  font-size:clamp(48px,8vw,86px);
-  line-height:.98;
-  letter-spacing:-3px;
+max-width:850px;
+margin:auto;
+font-size:clamp(48px,8vw,86px);
+line-height:.98;
+letter-spacing:-3px
 }
 
-.hero h1 span{
-  color:#777;
-}
+.hero h1 span{color:#777}
 
 .hero p{
-  max-width:650px;
-  margin:25px auto 0;
-  color:#888;
-  font-size:17px;
-  line-height:1.7;
+max-width:650px;
+margin:25px auto 0;
+color:#888;
+font-size:17px;
+line-height:1.7
 }
 
-.hero-buttons{
-  display:flex;
-  justify-content:center;
-  gap:12px;
-  margin-top:35px;
-  flex-wrap:wrap;
+.buttons{
+display:flex;
+justify-content:center;
+gap:12px;
+margin-top:35px;
+flex-wrap:wrap
 }
 
 .button{
-  display:inline-block;
-  padding:14px 22px;
-  border-radius:10px;
-  font-size:13px;
-  font-weight:bold;
+display:inline-block;
+padding:14px 22px;
+border-radius:10px;
+font-size:13px;
+font-weight:bold
 }
 
-.primary{
-  background:#fff;
-  color:#000;
-}
-
-.secondary{
-  border:1px solid #444;
-  color:#fff;
-}
+.primary{background:#fff;color:#000}
+.secondary{border:1px solid #444}
 
 .stats{
-  max-width:900px;
-  margin:60px auto 0;
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  border:1px solid #29292f;
-  border-radius:18px;
-  overflow:hidden;
+max-width:900px;
+margin:60px auto 0;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+border:1px solid #29292f;
+border-radius:18px;
+overflow:hidden
 }
 
 .stat{
-  padding:25px;
-  background:#111116;
-  border-right:1px solid #29292f;
+padding:25px;
+background:#111116;
+border-right:1px solid #29292f
 }
 
-.stat:last-child{
-  border-right:none;
-}
+.stat:last-child{border-right:none}
 
 .stat strong{
-  display:block;
-  font-size:30px;
-  margin-bottom:6px;
+display:block;
+font-size:30px;
+margin-bottom:6px
 }
 
 .stat span{
-  color:#666;
-  font-size:12px;
+color:#666;
+font-size:12px
 }
 
 .collection{
-  max-width:1150px;
-  margin:auto;
-  padding:80px 20px;
+max-width:1150px;
+margin:auto;
+padding:80px 20px
 }
 
-.collection-heading{
-  margin-bottom:35px;
+.heading{
+margin-bottom:35px
 }
 
-.collection-heading h2{
-  font-size:35px;
-}
+.heading h2{font-size:35px}
 
-.collection-heading p{
-  margin-top:10px;
-  color:#777;
-  font-size:13px;
+.heading p{
+margin-top:10px;
+color:#777;
+font-size:13px
 }
 
 .grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:15px;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:15px
 }
 
 .card{
-  padding:22px;
-  min-height:220px;
-  display:flex;
-  flex-direction:column;
-  justify-content:space-between;
-  background:#111116;
-  border:1px solid #29292f;
-  border-radius:17px;
-  transition:.25s ease;
+padding:22px;
+min-height:220px;
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+background:#111116;
+border:1px solid #29292f;
+border-radius:17px;
+transition:.25s
 }
 
 .card:hover{
-  transform:translateY(-4px);
-  border-color:#666;
+transform:translateY(-4px);
+border-color:#666
 }
 
 .number{
-  color:#555;
-  font-size:12px;
-  letter-spacing:1px;
+color:#555;
+font-size:12px;
+letter-spacing:1px
 }
 
 .card h3{
-  font-size:19px;
-  line-height:1.3;
-  margin:20px 0 8px;
+font-size:19px;
+margin:20px 0 8px
 }
 
 .card p{
-  color:#777;
-  font-size:13px;
-  line-height:1.6;
+color:#777;
+font-size:13px;
+line-height:1.6
 }
 
 .view{
-  display:inline-block;
-  margin-top:20px;
-  color:#fff;
-  font-size:12px;
-  font-weight:bold;
+display:inline-block;
+margin-top:20px;
+font-size:12px;
+font-weight:bold
 }
 
-.coming{
-  opacity:.65;
+.soon{color:#555}
+
+.cta{
+margin-top:60px;
+padding:70px 25px;
+text-align:center;
+background:#111116;
+border:1px solid #333;
+border-radius:25px
 }
 
-.coming .view{
-  color:#666;
+.cta h2{
+font-size:clamp(35px,6vw,55px);
+margin-bottom:15px
 }
 
-.bottom-cta{
-  margin-top:60px;
-  padding:70px 25px;
-  text-align:center;
-  background:#111116;
-  border:1px solid #333;
-  border-radius:25px;
-}
-
-.bottom-cta h2{
-  font-size:clamp(35px,6vw,55px);
-  margin-bottom:15px;
-}
-
-.bottom-cta p{
-  color:#777;
-  margin-bottom:25px;
+.cta p{
+color:#777;
+margin-bottom:25px
 }
 
 footer{
-  padding:30px 20px;
-  text-align:center;
-  border-top:1px solid #25252b;
-  color:#555;
-  font-size:12px;
+padding:30px 20px;
+text-align:center;
+border-top:1px solid #25252b;
+color:#555;
+font-size:12px
 }
 
 @media(max-width:800px){
-
-  .grid{
-    grid-template-columns:repeat(2,1fr);
-  }
-
+.grid{grid-template-columns:repeat(2,1fr)}
 }
 
 @media(max-width:520px){
-
-  .hero{
-    padding:80px 16px 60px;
-  }
-
-  .hero h1{
-    letter-spacing:-2px;
-  }
-
-  .stats{
-    grid-template-columns:1fr;
-  }
-
-  .stat{
-    border-right:none;
-    border-bottom:1px solid #29292f;
-  }
-
-  .stat:last-child{
-    border-bottom:none;
-  }
-
-  .grid{
-    grid-template-columns:1fr;
-  }
-
-  .collection{
-    padding:60px 16px;
-  }
-
+.hero{padding:80px 16px 60px}
+.hero h1{letter-spacing:-2px}
+.stats{grid-template-columns:1fr}
+.stat{border-right:none;border-bottom:1px solid #29292f}
+.stat:last-child{border-bottom:none}
+.grid{grid-template-columns:1fr}
+.collection{padding:60px 16px}
 }
-
 </style>
 </head>
 
@@ -271,1148 +207,589 @@ footer{
 
 <header class="hero">
 
-  <div class="badge">
-    COMPLETE HTML / CSS COLLECTION
-  </div>
+<div class="badge">COMPLETE HTML / CSS COLLECTION</div>
 
-  <h1>
-    50 Modern
-    <span>Website Sections.</span>
-  </h1>
+<h1>
+50 Modern
+<span>Website Sections.</span>
+</h1>
 
-  <p>
-    A curated collection of responsive, modern and
-    reusable HTML/CSS sections for landing pages,
-    SaaS websites, portfolios and modern businesses.
-  </p>
+<p>
+A curated collection of responsive, modern and reusable
+HTML/CSS sections for landing pages, SaaS websites,
+portfolios and modern businesses.
+</p>
 
-  <div class="hero-buttons">
+<div class="buttons">
 
-    <a href="#collection" class="button primary">
-      Explore Collection ↓
-    </a>
+<a href="#collection" class="button primary">
+Explore Collection ↓
+</a>
 
-    <a
-      href="https://github.com/ChosenOne-Me/50-modern-html-css-sections"
-      class="button secondary"
-      target="_blank"
-      rel="noopener">
-      GitHub
-    </a>
+<a
+href="https://github.com/ChosenOne-Me/50-modern-html-css-sections"
+class="button secondary"
+target="_blank">
+GitHub
+</a>
 
-  </div>
+</div>
 
-  <div class="stats">
+<div class="stats">
 
-    <div class="stat">
-      <strong>47</strong>
-      <span>Live Sections</span>
-    </div>
+<div class="stat">
+<strong>47</strong>
+<span>Live Sections</span>
+</div>
 
-    <div class="stat">
-      <strong>100%</strong>
-      <span>HTML + CSS</span>
-    </div>
+<div class="stat">
+<strong>100%</strong>
+<span>HTML + CSS</span>
+</div>
 
-    <div class="stat">
-      <strong>3</strong>
-      <span>Coming Soon</span>
-    </div>
+<div class="stat">
+<strong>3</strong>
+<span>Coming Soon</span>
+</div>
 
-  </div>
+</div>
 
 </header>
 
 
 <main class="collection" id="collection">
 
-  <div class="collection-heading">
-
-    <h2>Explore The Collection</h2>
-
-    <p>
-      Click any section to open its live demo.
-    </p>
-
-  </div>
-
-
-  <div class="grid">
-
-
-    <!-- 01 -->
-
-    <article class="card">
-
-      <div>
-        <div class="number">01</div>
-
-        <h3>About</h3>
-
-        <p>
-          Company introduction and brand story.
-        </p>
-      </div>
-
-      <a href="about.html" class="view">
-        Live Demo →
-      </a>
-
-    </article>
-
-
-    <!-- 02 -->
-
-    <article class="card">
-
-      <div>
-        <div class="number">02</div>
-
-        <h3>Achievements</h3>
-
-        <p>
-          Awards, milestones and achievement statistics.
-        </p>
-      </div>
-
-      <a href="achievements.html" class="view">
-        Live Demo →
-      </a>
-
-    </article>
-
-
-    <!-- 03 -->
-
-    <article class="card">
-
-      <div>
-        <div class="number">03</div>
-
-        <h3>App Download</h3>
-
-        <p>
-          Mobile application promotion section.
-        </p>
-      </div>
-
-      <a href="app-download.html" class="view">
-        Live Demo →
-      </a>
-
-    </article>
-
-
-    <!-- 04 -->
-
-    <article class="card">
-
-      <div>
-        <div class="number">04</div>
-
-        <h3>Blog</h3>
-
-        <p>
-          Modern editorial blog layout.
-        </p>
-      </div>
-
-      <a href="blog.html" class="view">
-        Live Demo →
-      </a>
-
-    </article>
-
-
-    <!-- 05 -->
-
-    <article class="card">
-
-      <div>
-        <div class="number">05</div>
-
-        <h3>Featured Blog</h3>
-
-        <p>
-          Featured article presentation.
-        </p>
-      </div>
-
-      <a href="blog-featured.html" class="view">
-        Live Demo →
-      </a>
-
-    </article>
-
-
-    <!-- 06 -->
-
-    <article class="card">
-
-      <div>
-        <div class="number">06</div>
-
-        <h3>Case Study</h3>
-
-        <p>
-          Present projects and results.
-        </p>
-      </div>
-
-      <a href="case-study.html" class="view">
-        Live Demo →
-      </a>
-
-    </article>
-
-
-    <!-- 07 -->
-
-    <article class="card">
-
-      <div>
-        <div class="number">07</div>
-
-        <h3>Company Story</h3>
-
-        <p>
-          Brand story and company history.
-        </p>
-      </div>
-
-      <a href="company-story.html" class="view">
-        Live Demo →
-      </a>
-
-    </article>
-
-
-    <!-- 08 -->
-
-    <article class="card">
-
-      <div>
-        <div class="number">08</div>
-
-        <h3>Comparison</h3>
-
-        <p>
-          Compare products or services.
-        </p>
-      </div>
-
-      <a href="comparison.html" class="view">
-        Live Demo →
-      </a>
-
-    </article>
-
-
-    <!-- 09 -->
-
-    <article class="card">
-
-      <div>
-        <div class="number">09</div>
-
-        <h3>Comparison Table</h3>
-
-        <p>
-          Detailed side-by-side comparison.
-        </p>
-      </div>
-
-      <a href="comparison-table.html" class="view">
-        Live Demo →
-      </a>
-
-    </article>
-
-
-    <!-- 10 -->
-
-    <article class="card">
-
-      <div>
-        <div class="number">10</div>
-
-        <h3>Contact</h3>
-
-        <p>
-          Clean contact information layout.
-        </p>
-      </div>
-
-      <a href="contact.html" class="view">
-        Live Demo →
-      </a>
-
-    </article>
-
-
-    <!-- 11 -->
-
-    <article class="card">
-
-      <div>
-        <div class="number">11</div>
-
-        <h3>Contact Split</h3>
-
-        <p>
-          Contact information and form split layout.
-        </p>
-      </div>
-
-      <a href="contact-split.html" class="view">
-        Live Demo →
-      </a>
-
-    </article>
-
-
-    <!-- 12 -->
-
-    <article class="card">
-
-      <div>
-        <div class="number">12</div>
-
-        <h3>CTA</h3>
-
-        <p>
-          Strong call-to-action section.
-        </p>
-      </div>
-
-      <a href="cta.html" class="view">
-        Live Demo →
-      </a>
-
-    </article>
-
-
-    <!-- 13 -->
-
-    <article class="card">
-
-      <div>
-        <div class="number">13</div>
-
-        <h3>CTA Banner</h3>
-
-        <p>
-          Conversion-focused promotional banner.
-        </p>
-      </div>
-
-      <a href="cta-banner.html" class="view">
-        Live Demo →
-      </a>
-
-    </article>
-
-
-    <!-- 14 -->
-
-    <article class="card">
-
-      <div>
-        <div class="number">14</div>
-
-        <h3>FAQ</h3>
-
-        <p>
-          Frequently asked questions.
-        </p>
-      </div>
-
-      <a href="faq.html" class="view">
-        Live Demo →
-      </a>
-
-    </article>
-
-
-    <!-- 15 -->
-
-    <article class="card">
-
-      <div>
-        <div class="number">15</div>
-
-        <h3>FAQ Cards</h3>
-
-        <p>
-          Card-based FAQ layout.
-        </p>
-      </div>
-
-      <a href="faq-cards.html" class="view">
-        Live Demo →
-      </a>
-
-    </article>
-
-
-    <!-- 16 -->
-
-    <article class="card">
-
-      <div>
-        <div class="number">16</div>
-
-        <h3>FAQ + CTA</h3>
-
-        <p>
-          FAQ combined with conversion CTA.
-        </p>
-      </div>
-
-      <a href="faq-cta.html" class="view">
-        Live Demo →
-      </a>
-
-    </article>
-
-
-    <!-- 17 -->
-
-    <article class="card">
-
-      <div>
-        <div class="number">17</div>
-
-        <h3>Two Column FAQ</h3>
-
-        <p>
-          Two-column frequently asked questions.
-        </p>
-      </div>
-
-      <a href="faq-two-column.html" class="view">
-        Live Demo →
-      </a>
-
-    </article>
-
-
-    <!-- 18 -->
-
-    <article class="card">
-
-      <div>
-        <div class="number">18</div>
-
-        <h3>Feature Comparison</h3>
-
-        <p>
-          Compare multiple product features.
-        </p>
-      </div>
-
-      <a href="feature-comparison.html" class="view">
-        Live Demo →
-      </a>
-
-    </article>
-
-
-    <!-- 19 -->
-
-    <article class="card">
-
-      <div>
-        <div class="number">19</div>
-
-        <h3>Feature Highlight</h3>
-
-        <p>
-          Focus attention on a major feature.
-        </p>
-      </div>
-
-      <a href="feature-highlight.html" class="view">
-        Live Demo →
-      </a>
-
-    </article>
-
-
-    <!-- 20 -->
-
-    <article class="card">
-
-      <div>
-        <div class="number">20</div>
-
-        <h3>Features</h3>
-
-        <p>
-          Product feature card collection.
-        </p>
-      </div>
-
-      <a href="features.html" class="view">
-        Live Demo →
-      </a>
-
-    </article>
-
-
-    <!-- 21 -->
-
-    <article class="card">
-
-      <div>
-        <div class="number">21</div>
-
-        <h3>Final CTA</h3>
-
-        <p>
-          Premium final conversion section.
-        </p>
-      </div>
-
-      <a href="final-cta.html" class="view">
-        Live Demo →
-      </a>
-
-    </article>
-
-
-    <!-- 22 -->
-
-    <article class="card">
-
-      <div>
-        <div class="number">22</div>
-
-        <h3>Image Gallery</h3>
-
-        <p>
-          Responsive visual gallery.
-        </p>
-      </div>
-
-      <a href="image-gallery.html" class="view">
-        Live Demo →
-      </a>
-
-    </article>
-
-
-    <!-- 23 -->
-
-    <article class="card">
-
-      <div>
-        <div class="number">23</div>
-
-        <h3>Logo Cloud</h3>
-
-        <p>
-          Trusted company logo showcase.
-        </p>
-      </div>
-
-      <a href="logo-cloud.html" class="view">
-        Live Demo →
-      </a>
-
-    </article>
-
-
-    <!-- 24 -->
-
-    <article class="card">
-
-      <div>
-        <div class="number">24</div>
-
-        <h3>Logo Marquee</h3>
-
-        <p>
-          Scrolling brand logo presentation.
-        </p>
-      </div>
-
-      <a href="logo-marquee.html" class="view">
-        Live Demo →
-      </a>
-
-    </article>
-
-
-    <!-- 25 -->
-
-    <article class="card">
-
-      <div>
-        <div class="number">25</div>
-
-        <h3>Logo Stats</h3>
-
-        <p>
-          Trusted logos combined with statistics.
-        </p>
-      </div>
-
-      <a href="logo-stats.html" class="view">
-        Live Demo →
-      </a>
-
-    </article>
-
-
-    <!-- 26 -->
-
-    <article class="card">
-
-      <div>
-        <div class="number">26</div>
-
-        <h3>Minimal Footer</h3>
-
-        <p>
-          Clean multi-column footer.
-        </p>
-      </div>
-
-      <a href="minimal-footer.html" class="view">
-        Live Demo →
-      </a>
-
-    </article>
-
-
-    <!-- 27 -->
-
-    <article class="card">
-
-      <div>
-        <div class="number">27</div>
-
-        <h3>Newsletter</h3>
-
-        <p>
-          Email subscription section.
-        </p>
-      </div>
-
-      <a href="newsletter.html" class="view">
-        Live Demo →
-      </a>
-
-    </article>
-
-
-    <!-- 28 -->
-
-    <article class="card">
-
-      <div>
-        <div class="number">28</div>
-
-        <h3>Newsletter CTA</h3>
-
-        <p>
-          Newsletter conversion section.
-        </p>
-      </div>
-
-      <a href="newsletter-cta.html" class="view">
-        Live Demo →
-      </a>
-
-    </article>
-
-
-    <!-- 29 -->
-
-    <article class="card">
-
-      <div>
-        <div class="number">29</div>
-
-        <h3>Portfolio</h3>
-
-        <p>
-          Creative portfolio showcase.
-        </p>
-      </div>
-
-      <a href="portfolio.html" class="view">
-        Live Demo →
-      </a>
-
-    </article>
-
-
-    <!-- 30 -->
-
-    <article class="card">
-
-      <div>
-        <div class="number">30</div>
-
-        <h3>Portfolio Cards</h3>
-
-        <p>
-          Project and case-study cards.
-        </p>
-      </div>
-
-      <a href="portfolio-cards.html" class="view">
-        Live Demo →
-      </a>
-
-    </article>
-
-
-    <!-- 31 -->
-
-    <article class="card">
-
-      <div>
-        <div class="number">31</div>
-
-        <h3>Pricing</h3>
-
-        <p>
-          Modern pricing plans.
-        </p>
-      </div>
-
-      <a href="pricing.html" class="view">
-        Live Demo →
-      </a>
-
-    </article>
-
-
-    <!-- 32 -->
-
-    <article class="card">
-
-      <div>
-        <div class="number">32</div>
-
-        <h3>Pricing Spotlight</h3>
-
-        <p>
-          Highlighted pricing offer.
-        </p>
-      </div>
-
-      <a href="pricing-spotlight.html" class="view">
-        Live Demo →
-      </a>
-
-    </article>
-
-
-    <!-- 33 -->
-
-    <article class="card">
-
-      <div>
-        <div class="number">33</div>
-
-        <h3>Pricing Toggle</h3>
-
-        <p>
-          Monthly and yearly pricing switcher.
-        </p>
-      </div>
-
-      <a href="pricing-toggle.html" class="view">
-        Live Demo →
-      </a>
-
-    </article>
-
-
-    <!-- 34 -->
-
-    <article class="card">
-
-      <div>
-        <div class="number">34</div>
-
-        <h3>Process</h3>
-
-        <p>
-          Explain a workflow clearly.
-        </p>
-      </div>
-
-      <a href="process.html" class="view">
-        Live Demo →
-      </a>
-
-    </article>
-
-
-    <!-- 35 -->
-
-    <article class="card">
-
-      <div>
-        <div class="number">35</div>
-
-        <h3>Process Steps</h3>
-
-        <p>
-          Numbered workflow presentation.
-        </p>
-      </div>
-
-      <a href="process-steps.html" class="view">
-        Live Demo →
-      </a>
-
-    </article>
-
-
-    <!-- 36 -->
-
-    <article class="card">
-
-      <div>
-        <div class="number">36</div>
-
-        <h3>Product Features</h3>
-
-        <p>
-          Product capability showcase.
-        </p>
-      </div>
-
-      <a href="product-features.html" class="view">
-        Live Demo →
-      </a>
-
-    </article>
-
-
-    <!-- 37 -->
-
-    <article class="card">
-
-      <div>
-        <div class="number">37</div>
-
-        <h3>Product Showcase</h3>
-
-        <p>
-          Visual product presentation.
-        </p>
-      </div>
-
-      <a href="product-showcase.html" class="view">
-        Live Demo →
-      </a>
-
-    </article>
-
-
-    <!-- 38 -->
-
-    <article class="card">
-
-      <div>
-        <div class="number">38</div>
-
-        <h3>Services</h3>
-
-        <p>
-          Services and offerings showcase.
-        </p>
-      </div>
-
-      <a href="services.html" class="view">
-        Live Demo →
-      </a>
-
-    </article>
-
-
-    <!-- 39 -->
-
-    <article class="card">
-
-      <div>
-        <div class="number">39</div>
-
-        <h3>Social Proof</h3>
-
-        <p>
-          Reviews and customer trust signals.
-        </p>
-      </div>
-
-      <a href="social-proof.html" class="view">
-        Live Demo →
-      </a>
-
-    </article>
-
-
-    <!-- 40 -->
-
-    <article class="card">
-
-      <div>
-        <div class="number">40</div>
-
-        <h3>Stats</h3>
-
-        <p>
-          Important business statistics.
-        </p>
-      </div>
-
-      <a href="stats.html" class="view">
-        Live Demo →
-      </a>
-
-    </article>
-
-
-    <!-- 41 -->
-
-    <article class="card">
-
-      <div>
-        <div class="number">41</div>
-
-        <h3>Team</h3>
-
-        <p>
-          Professional team showcase.
-        </p>
-      </div>
-
-      <a href="team.html" class="view">
-        Live Demo →
-      </a>
-
-    </article>
-
-
-    <!-- 42 -->
-
-    <article class="card">
-
-      <div>
-        <div class="number">42</div>
-
-        <h3>Team Grid 2</h3>
-
-        <p>
-          Expanded team member layout.
-        </p>
-      </div>
-
-      <a href="team-grid-2.html" class="view">
-        Live Demo →
-      </a>
-
-    </article>
-
-
-    <!-- 43 -->
-
-    <article class="card">
-
-      <div>
-        <div class="number">43</div>
-
-        <h3>Featured Testimonial</h3>
-
-        <p>
-          Large customer testimonial spotlight.
-        </p>
-      </div>
-
-      <a href="testimonial-spotlight.html" class="view">
-        Live Demo →
-      </a>
-
-    </article>
-
-
-    <!-- 44 -->
-
-    <article class="card">
-
-      <div>
-        <div class="number">44</div>
-
-        <h3>Testimonials</h3>
-
-        <p>
-          Customer testimonial collection.
-        </p>
-      </div>
-
-      <a href="testimonials.html" class="view">
-        Live Demo →
-      </a>
-
-    </article>
-
-
-    <!-- 45 -->
-
-    <article class="card">
-
-      <div>
-        <div class="number">45</div>
-
-        <h3>Timeline</h3>
-
-        <p>
-          Company or project timeline.
-        </p>
-      </div>
-
-      <a href="timeline.html" class="view">
-        Live Demo →
-      </a>
-
-    </article>
-
-
-    <!-- 46 -->
-
-    <article class="card">
-
-      <div>
-        <div class="number">46</div>
-
-        <h3>Video Hero</h3>
-
-        <p>
-          Video-focused hero presentation.
-        </p>
-      </div>
-
-      <a href="video-hero.html" class="view">
-        Live Demo →
-      </a>
-
-    </article>
-
-
-    <!-- 47 -->
-
-    <article class="card">
-
-      <div>
-        <div class="number">47</div>
-
-        <h3>Video Showcase</h3>
-
-        <p>
-          Large media presentation.
-        </p>
-      </div>
-
-      <a href="video-showcase.html" class="view">
-        Live Demo →
-      </a>
-
-    </article>
-
-
-    <!-- 48 -->
-
-    <article class="card coming">
-
-      <div>
-        <div class="number">48</div>
-
-        <h3>Section Coming Soon</h3>
-
-        <p>
-          New premium HTML/CSS section will be added.
-        </p>
-      </div>
-
-      <span class="view">
-        Coming Soon
-      </span>
-
-    </article>
-
-
-    <!-- 49 -->
-
-    <article class="card coming">
-
-      <div>
-        <div class="number">49</div>
-
-        <h3>Section Coming Soon</h3>
-
-        <p>
-          New premium HTML/CSS section will be added.
-        </p>
-      </div>
-
-      <span class="view">
-        Coming Soon
-      </span>
-
-    </article>
-
-
-    <!-- 50 -->
-
-    <article class="card coming">
-
-      <div>
-        <div class="number">50</div>
-
-        <h3>Section Coming Soon</h3>
-
-        <p>
-          New premium HTML/CSS section will be added.
-        </p>
-      </div>
-
-      <span class="view">
-        Coming Soon
-      </span>
-
-    </article>
-
-
-  </div>
-
-
-  <div class="bottom-cta">
-
-    <h2>Build Better Websites.</h2>
-
-    <p>
-      47 ready-to-use HTML/CSS sections.
-      3 more coming soon.
-    </p>
-
-    <a href="#collection" class="button primary">
-      Explore All Sections
-    </a>
-
-  </div>
+<div class="heading">
+<h2>Explore The Collection</h2>
+<p>Click any section to open its live demo.</p>
+</div>
+
+<div class="grid">
+
+
+<div class="card">
+<div>
+<div class="number">01</div>
+<h3>About</h3>
+<p>Company introduction and brand story.</p>
+</div>
+<a href="about.html" class="view">Live Demo →</a>
+</div>
+
+
+<div class="card">
+<div>
+<div class="number">02</div>
+<h3>Achievements</h3>
+<p>Milestones and achievements.</p>
+</div>
+<a href="achievements.html" class="view">Live Demo →</a>
+</div>
+
+
+<div class="card">
+<div>
+<div class="number">03</div>
+<h3>App Download</h3>
+<p>Mobile application promotion.</p>
+</div>
+<a href="app-download.html" class="view">Live Demo →</a>
+</div>
+
+
+<div class="card">
+<div>
+<div class="number">04</div>
+<h3>Blog</h3>
+<p>Modern editorial blog layout.</p>
+</div>
+<a href="blog.html" class="view">Live Demo →</a>
+</div>
+
+
+<div class="card">
+<div>
+<div class="number">05</div>
+<h3>Featured Blog</h3>
+<p>Featured article presentation.</p>
+</div>
+<a href="blog-featured.html" class="view">Live Demo →</a>
+</div>
+
+
+<div class="card">
+<div>
+<div class="number">06</div>
+<h3>Case Study</h3>
+<p>Projects and results presentation.</p>
+</div>
+<a href="case-study.html" class="view">Live Demo →</a>
+</div>
+
+
+<div class="card">
+<div>
+<div class="number">07</div>
+<h3>Company Story</h3>
+<p>Brand story and company history.</p>
+</div>
+<a href="company-story.html" class="view">Live Demo →</a>
+</div>
+
+
+<div class="card">
+<div>
+<div class="number">08</div>
+<h3>Comparison</h3>
+<p>Compare products or services.</p>
+</div>
+<a href="comparison.html" class="view">Live Demo →</a>
+</div>
+
+
+<div class="card">
+<div>
+<div class="number">09</div>
+<h3>Comparison Table</h3>
+<p>Detailed side-by-side comparison.</p>
+</div>
+<a href="comparison-table.html" class="view">Live Demo →</a>
+</div>
+
+
+<div class="card">
+<div>
+<div class="number">10</div>
+<h3>Contact</h3>
+<p>Clean contact layout.</p>
+</div>
+<a href="contact.html" class="view">Live Demo →</a>
+</div>
+
+
+<div class="card">
+<div>
+<div class="number">11</div>
+<h3>Contact Split</h3>
+<p>Split contact layout.</p>
+</div>
+<a href="contact-split.html" class="view">Live Demo →</a>
+</div>
+
+
+<div class="card">
+<div>
+<div class="number">12</div>
+<h3>CTA</h3>
+<p>Call-to-action section.</p>
+</div>
+<a href="cta.html" class="view">Live Demo →</a>
+</div>
+
+
+<div class="card">
+<div>
+<div class="number">13</div>
+<h3>CTA Banner</h3>
+<p>Promotional CTA banner.</p>
+</div>
+<a href="cta-banner.html" class="view">Live Demo →</a>
+</div>
+
+
+<div class="card">
+<div>
+<div class="number">14</div>
+<h3>FAQ</h3>
+<p>Frequently asked questions.</p>
+</div>
+<a href="faq.html" class="view">Live Demo →</a>
+</div>
+
+
+<div class="card">
+<div>
+<div class="number">15</div>
+<h3>FAQ Cards</h3>
+<p>Card-based FAQ layout.</p>
+</div>
+<a href="faq-cards.html" class="view">Live Demo →</a>
+</div>
+
+
+<div class="card">
+<div>
+<div class="number">16</div>
+<h3>FAQ + CTA</h3>
+<p>FAQ with conversion CTA.</p>
+</div>
+<a href="faq-cta.html" class="view">Live Demo →</a>
+</div>
+
+
+<div class="card">
+<div>
+<div class="number">17</div>
+<h3>Two Column FAQ</h3>
+<p>Two-column FAQ layout.</p>
+</div>
+<a href="faq-two-column.html" class="view">Live Demo →</a>
+</div>
+
+
+<div class="card">
+<div>
+<div class="number">18</div>
+<h3>Feature Comparison</h3>
+<p>Compare product features.</p>
+</div>
+<a href="feature-comparison.html" class="view">Live Demo →</a>
+</div>
+
+
+<div class="card">
+<div>
+<div class="number">19</div>
+<h3>Feature Highlight</h3>
+<p>Highlight important features.</p>
+</div>
+<a href="feature-highlight.html" class="view">Live Demo →</a>
+</div>
+
+
+<div class="card">
+<div>
+<div class="number">20</div>
+<h3>Features</h3>
+<p>Product feature cards.</p>
+</div>
+<a href="features.html" class="view">Live Demo →</a>
+</div>
+
+
+<div class="card">
+<div>
+<div class="number">21</div>
+<h3>Final CTA</h3>
+<p>Final conversion section.</p>
+</div>
+<a href="final-cta.html" class="view">Live Demo →</a>
+</div>
+
+
+<div class="card">
+<div>
+<div class="number">22</div>
+<h3>Image Gallery</h3>
+<p>Responsive image gallery.</p>
+</div>
+<a href="image-gallery.html" class="view">Live Demo →</a>
+</div>
+
+
+<div class="card">
+<div>
+<div class="number">23</div>
+<h3>Logo Cloud</h3>
+<p>Trusted brand logos.</p>
+</div>
+<a href="logo-cloud.html" class="view">Live Demo →</a>
+</div>
+
+
+<div class="card">
+<div>
+<div class="number">24</div>
+<h3>Logo Marquee</h3>
+<p>Scrolling logo showcase.</p>
+</div>
+<a href="logo-marquee.html" class="view">Live Demo →</a>
+</div>
+
+
+<div class="card">
+<div>
+<div class="number">25</div>
+<h3>Logo Stats</h3>
+<p>Logos with business statistics.</p>
+</div>
+<a href="logo-stats.html" class="view">Live Demo →</a>
+</div>
+
+
+<div class="card">
+<div>
+<div class="number">26</div>
+<h3>Minimal Footer</h3>
+<p>Minimal website footer.</p>
+</div>
+<a href="minimal-footer.html" class="view">Live Demo →</a>
+</div>
+
+
+<div class="card">
+<div>
+<div class="number">27</div>
+<h3>Newsletter</h3>
+<p>Email subscription section.</p>
+</div>
+<a href="newsletter.html" class="view">Live Demo →</a>
+</div>
+
+
+<div class="card">
+<div>
+<div class="number">28</div>
+<h3>Newsletter CTA</h3>
+<p>Newsletter conversion section.</p>
+</div>
+<a href="newsletter-cta.html" class="view">Live Demo →</a>
+</div>
+
+
+<div class="card">
+<div>
+<div class="number">29</div>
+<h3>Portfolio</h3>
+<p>Creative portfolio showcase.</p>
+</div>
+<a href="portfolio.html" class="view">Live Demo →</a>
+</div>
+
+
+<div class="card">
+<div>
+<div class="number">30</div>
+<h3>Portfolio Cards</h3>
+<p>Project card collection.</p>
+</div>
+<a href="portfolio-cards.html" class="view">Live Demo →</a>
+</div>
+
+
+<div class="card">
+<div>
+<div class="number">31</div>
+<h3>Pricing</h3>
+<p>Modern pricing plans.</p>
+</div>
+<a href="pricing.html" class="view">Live Demo →</a>
+</div>
+
+
+<div class="card">
+<div>
+<div class="number">32</div>
+<h3>Pricing Spotlight</h3>
+<p>Featured pricing offer.</p>
+</div>
+<a href="pricing-spotlight.html" class="view">Live Demo →</a>
+</div>
+
+
+<div class="card">
+<div>
+<div class="number">33</div>
+<h3>Pricing Toggle</h3>
+<p>Monthly and yearly pricing.</p>
+</div>
+<a href="pricing-toggle.html" class="view">Live Demo →</a>
+</div>
+
+
+<div class="card">
+<div>
+<div class="number">34</div>
+<h3>Process</h3>
+<p>Workflow presentation.</p>
+</div>
+<a href="process.html" class="view">Live Demo →</a>
+</div>
+
+
+<div class="card">
+<div>
+<div class="number">35</div>
+<h3>Process Steps</h3>
+<p>Numbered process steps.</p>
+</div>
+<a href="process-steps.html" class="view">Live Demo →</a>
+</div>
+
+
+<div class="card">
+<div>
+<div class="number">36</div>
+<h3>Product Features</h3>
+<p>Product capability showcase.</p>
+</div>
+<a href="product-features.html" class="view">Live Demo →</a>
+</div>
+
+
+<div class="card">
+<div>
+<div class="number">37</div>
+<h3>Product Showcase</h3>
+<p>Visual product presentation.</p>
+</div>
+<a href="product-showcase.html" class="view">Live Demo →</a>
+</div>
+
+
+<div class="card">
+<div>
+<div class="number">38</div>
+<h3>Services</h3>
+<p>Services and offerings.</p>
+</div>
+<a href="services.html" class="view">Live Demo →</a>
+</div>
+
+
+<div class="card">
+<div>
+<div class="number">39</div>
+<h3>Social Proof</h3>
+<p>Customer trust signals.</p>
+</div>
+<a href="social-proof.html" class="view">Live Demo →</a>
+</div>
+
+
+<div class="card">
+<div>
+<div class="number">40</div>
+<h3>Stats</h3>
+<p>Business statistics.</p>
+</div>
+<a href="stats.html" class="view">Live Demo →</a>
+</div>
+
+
+<div class="card">
+<div>
+<div class="number">41</div>
+<h3>Team</h3>
+<p>Team member showcase.</p>
+</div>
+<a href="team.html" class="view">Live Demo →</a>
+</div>
+
+
+<div class="card">
+<div>
+<div class="number">42</div>
+<h3>Team Grid 2</h3>
+<p>Alternative team layout.</p>
+</div>
+<a href="team-grid-2.html" class="view">Live Demo →</a>
+</div>
+
+
+<div class="card">
+<div>
+<div class="number">43</div>
+<h3>Testimonial Spotlight</h3>
+<p>Featured customer testimonial.</p>
+</div>
+<a href="testimonial-spotlight.html" class="view">Live Demo →</a>
+</div>
+
+
+<div class="card">
+<div>
+<div class="number">44</div>
+<h3>Testimonials</h3>
+<p>Customer testimonial collection.</p>
+</div>
+<a href="testimonials.html" class="view">Live Demo →</a>
+</div>
+
+
+<div class="card">
+<div>
+<div class="number">45</div>
+<h3>Timeline</h3>
+<p>Company or project timeline.</p>
+</div>
+<a href="timeline.html" class="view">Live Demo →</a>
+</div>
+
+
+<div class="card">
+<div>
+<div class="number">46</div>
+<h3>Video Hero</h3>
+<p>Video-focused hero section.</p>
+</div>
+<a href="video-hero.html" class="view">Live Demo →</a>
+</div>
+
+
+<div class="card">
+<div>
+<div class="number">47</div>
+<h3>Video Showcase</h3>
+<p>Large video presentation.</p>
+</div>
+<a href="video-showcase.html" class="view">Live Demo →</a>
+</div>
+
+
+<div class="card soon">
+<div>
+<div class="number">48</div>
+<h3>Coming Soon</h3>
+<p>New section will be added.</p>
+</div>
+<span class="view">Coming Soon</span>
+</div>
+
+
+<div class="card soon">
+<div>
+<div class="number">49</div>
+<h3>Coming Soon</h3>
+<p>New section will be added.</p>
+</div>
+<span class="view">Coming Soon</span>
+</div>
+
+
+<div class="card soon">
+<div>
+<div class="number">50</div>
+<h3>Coming Soon</h3>
+<p>New section will be added.</p>
+</div>
+<span class="view">Coming Soon</span>
+</div>
+
+
+</div>
+
+
+<div class="cta">
+
+<h2>Build Better Websites.</h2>
+
+<p>
+47 ready-to-use HTML/CSS sections.
+3 more coming soon.
+</p>
+
+<a href="#collection" class="button primary">
+Explore All Sections
+</a>
+
+</div>
 
 </main>
 
 
 <footer>
-  50 Modern HTML/CSS Sections · Built with HTML & CSS
+50 Modern HTML/CSS Sections · Built with HTML & CSS
 </footer>
 
 </body>
