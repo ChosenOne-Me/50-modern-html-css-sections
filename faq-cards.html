@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ Cards Section</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b0b0f;
+      color: #fff;
+    }
+
+    .faq {
+      padding: 100px 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .heading {
+      max-width: 700px;
+      margin: 0 auto 55px;
+      text-align: center;
+    }
+
+    .heading span {
+      color: #999;
+      font-size: 13px;
+      letter-spacing: 1px;
+    }
+
+    .heading h1 {
+      font-size: clamp(40px, 6vw, 60px);
+      line-height: 1.05;
+      margin: 15px 0;
+    }
+
+    .heading p {
+      color: #888;
+      font-size: 17px;
+      line-height: 1.6;
+    }
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .faq-card {
+      padding: 28px;
+      background: #111116;
+      border: 1px solid #29292f;
+      border-radius: 18px;
+    }
+
+    .number {
+      color: #666;
+      font-size: 12px;
+      letter-spacing: 1px;
+      margin-bottom: 20px;
+    }
+
+    .faq-card h2 {
+      font-size: 19px;
+      line-height: 1.4;
+      margin-bottom: 12px;
+    }
+
+    .faq-card p {
+      color: #888;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .contact-note {
+      margin-top: 18px;
+      padding: 25px;
+      text-align: center;
+      background: #15151b;
+      border: 1px solid #29292f;
+      border-radius: 16px;
+    }
+
+    .contact-note p {
+      color: #888;
+      font-size: 14px;
+    }
+
+    .contact-note a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    @media (max-width: 700px) {
+      .faq {
+        padding: 70px 16px;
+      }
+
+      .faq-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="faq">
+
+    <div class="container">
+
+      <div class="heading">
+
+        <span>COMMON QUESTIONS</span>
+
+        <h1>Quick Answers.</h1>
+
+        <p>
+          A card-based FAQ layout for websites that
+          need clear answers without a traditional accordion.
+        </p>
+
+      </div>
+
+      <div class="faq-grid">
+
+        <article class="faq-card">
+
+          <div class="number">01</div>
+
+          <h2>
+            What makes this product different?
+          </h2>
+
+          <p>
+            It combines a simple interface with powerful
+            features designed to keep the experience focused.
+          </p>
+
+        </article>
+
+
+        <article class="faq-card">
+
+          <div class="number">02</div>
+
+          <h2>
+            Can I customize the design?
+          </h2>
+
+          <p>
+            Yes. You can change colors, typography,
+            spacing, content and other visual details.
+          </p>
+
+        </article>
+
+
+        <article class="faq-card">
+
+          <div class="number">03</div>
+
+          <h2>
+            Does it work on mobile devices?
+          </h2>
+
+          <p>
+            Yes. The layout is responsive and adapts
+            automatically to smaller screens.
+          </p>
+
+        </article>
+
+
+        <article class="faq-card">
+
+          <div class="number">04</div>
+
+          <h2>
+            Is technical knowledge required?
+          </h2>
+
+          <p>
+            Basic HTML and CSS knowledge can help,
+            but the structure is intentionally simple.
+          </p>
+
+        </article>
+
+
+        <article class="faq-card">
+
+          <div class="number">05</div>
+
+          <h2>
+            Can I use the section commercially?
+          </h2>
+
+          <p>
+            Commercial usage depends on the license
+            included with the final product.
+          </p>
+
+        </article>
+
+
+        <article class="faq-card">
+
+          <div class="number">06</div>
+
+          <h2>
+            Will more sections be added?
+          </h2>
+
+          <p>
+            The collection is designed to grow with
+            additional modern website sections.
+          </p>
+
+        </article>
+
+      </div>
+
+
+      <div class="contact-note">
+
+        <p>
+          Still have questions?
+          <a href="#">Contact us →</a>
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</body>
+  </html>
