@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Modern Case Study Section</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b0b0f;
+      color: #fff;
+    }
+
+    .case-study {
+      padding: 100px 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .case-card {
+      overflow: hidden;
+      background: #111116;
+      border: 1px solid #29292f;
+      border-radius: 25px;
+    }
+
+    .visual {
+      min-height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #1a1a20;
+      color: #666;
+      font-size: 14px;
+    }
+
+    .content {
+      padding: 45px;
+    }
+
+    .label {
+      color: #999;
+      font-size: 13px;
+      letter-spacing: 1px;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      max-width: 750px;
+      font-size: clamp(38px, 6vw, 62px);
+      line-height: 1.05;
+      margin-bottom: 20px;
+    }
+
+    .description {
+      max-width: 750px;
+      color: #999;
+      font-size: 17px;
+      line-height: 1.7;
+      margin-bottom: 35px;
+    }
+
+    .results {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      margin-bottom: 35px;
+    }
+
+    .result {
+      padding: 22px;
+      border: 1px solid #29292f;
+      border-radius: 15px;
+    }
+
+    .result strong {
+      display: block;
+      font-size: 30px;
+      margin-bottom: 7px;
+    }
+
+    .result span {
+      color: #777;
+      font-size: 13px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 22px;
+      background: #fff;
+      color: #000;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    @media (max-width: 650px) {
+      .case-study {
+        padding: 70px 16px;
+      }
+
+      .content {
+        padding: 28px 22px;
+      }
+
+      .visual {
+        min-height: 260px;
+      }
+
+      .results {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="case-study">
+
+    <div class="container">
+
+      <article class="case-card">
+
+        <div class="visual">
+          PROJECT VISUAL
+        </div>
+
+        <div class="content">
+
+          <div class="label">
+            CASE STUDY · NOVA
+          </div>
+
+          <h1>
+            Turning A Complex Product Into A Simple Experience.
+          </h1>
+
+          <p class="description">
+            We redesigned the digital experience for a growing
+            technology company, focusing on clarity, speed and
+            a simpler customer journey.
+          </p>
+
+          <div class="results">
+
+            <div class="result">
+              <strong>42%</strong>
+              <span>More conversions</span>
+            </div>
+
+            <div class="result">
+              <strong>68%</strong>
+              <span>Faster user journey</span>
+            </div>
+
+            <div class="result">
+              <strong>3.2×</strong>
+              <span>More engagement</span>
+            </div>
+
+          </div>
+
+          <a href="#" class="button">
+            Read Full Case Study →
+          </a>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </section>
+
+</body>
+</html>
