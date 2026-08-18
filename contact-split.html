@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Contact Split Section</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b0b0f;
+      color: #fff;
+    }
+
+    .contact {
+      padding: 100px 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .contact-card {
+      display: grid;
+      grid-template-columns: 0.85fr 1.15fr;
+      overflow: hidden;
+      background: #111116;
+      border: 1px solid #29292f;
+      border-radius: 24px;
+    }
+
+    .info {
+      padding: 55px 45px;
+      background: #15151b;
+    }
+
+    .label {
+      color: #999;
+      font-size: 13px;
+      letter-spacing: 1px;
+      margin-bottom: 18px;
+    }
+
+    .info h1 {
+      font-size: clamp(38px, 5vw, 55px);
+      line-height: 1.05;
+      margin-bottom: 20px;
+    }
+
+    .intro {
+      color: #888;
+      line-height: 1.7;
+      font-size: 15px;
+      margin-bottom: 35px;
+    }
+
+    .details {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .detail {
+      padding: 18px;
+      border: 1px solid #29292f;
+      border-radius: 12px;
+    }
+
+    .detail strong {
+      display: block;
+      font-size: 13px;
+      margin-bottom: 5px;
+    }
+
+    .detail span {
+      color: #777;
+      font-size: 13px;
+    }
+
+    .form-area {
+      padding: 55px 45px;
+    }
+
+    .form-area h2 {
+      font-size: 25px;
+      margin-bottom: 8px;
+    }
+
+    .form-area > p {
+      color: #777;
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+
+    .field {
+      margin-bottom: 18px;
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+
+    label {
+      display: block;
+      color: #aaa;
+      font-size: 13px;
+      margin-bottom: 8px;
+    }
+
+    input,
+    textarea,
+    select {
+      width: 100%;
+      padding: 14px;
+      border: 1px solid #333;
+      border-radius: 9px;
+      background: #0b0b0f;
+      color: #fff;
+      font-family: inherit;
+      outline: none;
+    }
+
+    textarea {
+      min-height: 130px;
+      resize: vertical;
+    }
+
+    input:focus,
+    textarea:focus,
+    select:focus {
+      border-color: #777;
+    }
+
+    button {
+      width: 100%;
+      padding: 15px;
+      border: none;
+      border-radius: 9px;
+      background: #fff;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    @media (max-width: 800px) {
+      .contact {
+        padding: 70px 16px;
+      }
+
+      .contact-card {
+        grid-template-columns: 1fr;
+      }
+
+      .info,
+      .form-area {
+        padding: 35px 25px;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .row {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="contact">
+
+    <div class="container">
+
+      <div class="contact-card">
+
+        <div class="info">
+
+          <div class="label">
+            GET IN TOUCH
+          </div>
+
+          <h1>
+            Let's Start A Conversation.
+          </h1>
+
+          <p class="intro">
+            Tell us about your project, question or idea.
+            Our team will get back to you as soon as possible.
+          </p>
+
+          <div class="details">
+
+            <div class="detail">
+              <strong>Email</strong>
+              <span>hello@example.com</span>
+            </div>
+
+            <div class="detail">
+              <strong>Phone</strong>
+              <span>+1 555 123 4567</span>
+            </div>
+
+            <div class="detail">
+              <strong>Office</strong>
+              <span>New York, United States</span>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="form-area">
+
+          <h2>Send a message</h2>
+
+          <p>
+            Fill in the form and we'll be in touch.
+          </p>
+
+          <form>
+
+            <div class="row">
+
+              <div class="field">
+                <label for="first-name">First Name</label>
+
+                <input
+                  id="first-name"
+                  type="text"
+                  placeholder="John"
+                >
+              </div>
+
+              <div class="field">
+                <label for="last-name">Last Name</label>
+
+                <input
+                  id="last-name"
+                  type="text"
+                  placeholder="Doe"
+                >
+              </div>
+
+            </div>
+
+
+            <div class="field">
+
+              <label for="email">
+                Email Address
+              </label>
+
+              <input
+                id="email"
+                type="email"
+                placeholder="john@example.com"
+              >
+
+            </div>
+
+
+            <div class="field">
+
+              <label for="subject">
+                Subject
+              </label>
+
+              <select id="subject">
+
+                <option>Select a subject</option>
+                <option>General Question</option>
+                <option>Project Inquiry</option>
+                <option>Support</option>
+
+              </select>
+
+            </div>
+
+
+            <div class="field">
+
+              <label for="message">
+                Message
+              </label>
+
+              <textarea
+                id="message"
+                placeholder="Tell us about your project..."
+              ></textarea>
+
+            </div>
+
+
+            <button type="submit">
+              Send Message →
+            </button>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</body>
+</html>
