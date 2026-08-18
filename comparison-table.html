@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Modern Comparison Table</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b0b0f;
+      color: #fff;
+    }
+
+    .section {
+      padding: 100px 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .heading {
+      max-width: 700px;
+      margin: 0 auto 50px;
+      text-align: center;
+    }
+
+    .heading span {
+      color: #999;
+      font-size: 13px;
+      letter-spacing: 1px;
+    }
+
+    .heading h1 {
+      font-size: clamp(40px, 6vw, 60px);
+      line-height: 1.05;
+      margin: 15px 0;
+    }
+
+    .heading p {
+      color: #888;
+      font-size: 17px;
+      line-height: 1.6;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      border: 1px solid #29292f;
+      border-radius: 20px;
+      background: #111116;
+    }
+
+    table {
+      width: 100%;
+      min-width: 700px;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid #29292f;
+      border-right: 1px solid #29292f;
+    }
+
+    th:last-child,
+    td:last-child {
+      border-right: none;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    th {
+      font-size: 15px;
+      background: #15151b;
+    }
+
+    th:first-child,
+    td:first-child {
+      text-align: left;
+      width: 35%;
+    }
+
+    td:first-child {
+      color: #aaa;
+      font-size: 14px;
+    }
+
+    .recommended {
+      background: #18181e;
+    }
+
+    .badge {
+      display: inline-block;
+      margin-top: 7px;
+      padding: 5px 8px;
+      border-radius: 999px;
+      background: #fff;
+      color: #000;
+      font-size: 9px;
+      letter-spacing: .5px;
+    }
+
+    .check {
+      color: #fff;
+      font-size: 18px;
+    }
+
+    .cross {
+      color: #555;
+      font-size: 18px;
+    }
+
+    .price {
+      display: block;
+      margin-top: 8px;
+      color: #777;
+      font-size: 12px;
+      font-weight: normal;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      border: 1px solid #444;
+      border-radius: 8px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 12px;
+    }
+
+    .recommended .button {
+      background: #fff;
+      color: #000;
+      border-color: #fff;
+    }
+
+    @media (max-width: 600px) {
+      .section {
+        padding: 70px 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="section">
+
+    <div class="container">
+
+      <div class="heading">
+
+        <span>COMPARE FEATURES</span>
+
+        <h1>See What's Included.</h1>
+
+        <p>
+          Give customers a clear side-by-side comparison
+          so they can quickly choose the right option.
+        </p>
+
+      </div>
+
+
+      <div class="table-wrap">
+
+        <table>
+
+          <thead>
+
+            <tr>
+
+              <th>Features</th>
+
+              <th>
+                Basic
+                <span class="price">$19 / month</span>
+              </th>
+
+              <th class="recommended">
+                Pro
+                <span class="badge">RECOMMENDED</span>
+                <span class="price">$49 / month</span>
+              </th>
+
+              <th>
+                Business
+                <span class="price">$99 / month</span>
+              </th>
+
+            </tr>
+
+          </thead>
+
+
+          <tbody>
+
+            <tr>
+
+              <td>Unlimited Projects</td>
+
+              <td><span class="cross">×</span></td>
+
+              <td class="recommended">
+                <span class="check">✓</span>
+              </td>
+
+              <td><span class="check">✓</span></td>
+
+            </tr>
+
+
+            <tr>
+
+              <td>Advanced Analytics</td>
+
+              <td><span class="cross">×</span></td>
+
+              <td class="recommended">
+                <span class="check">✓</span>
+              </td>
+
+              <td><span class="check">✓</span></td>
+
+            </tr>
+
+
+            <tr>
+
+              <td>Team Collaboration</td>
+
+              <td><span class="cross">×</span></td>
+
+              <td class="recommended">
+                <span class="check">✓</span>
+              </td>
+
+              <td><span class="check">✓</span></td>
+
+            </tr>
+
+
+            <tr>
+
+              <td>Priority Support</td>
+
+              <td><span class="cross">×</span></td>
+
+              <td class="recommended">
+                <span class="check">✓</span>
+              </td>
+
+              <td><span class="check">✓</span></td>
+
+            </tr>
+
+
+            <tr>
+
+              <td>Custom Integrations</td>
+
+              <td><span class="cross">×</span></td>
+
+              <td class="recommended">
+                <span class="cross">×</span>
+              </td>
+
+              <td><span class="check">✓</span></td>
+
+            </tr>
+
+
+            <tr>
+
+              <td>Dedicated Support</td>
+
+              <td><span class="cross">×</span></td>
+
+              <td class="recommended">
+                <span class="cross">×</span>
+              </td>
+
+              <td><span class="check">✓</span></td>
+
+            </tr>
+
+
+            <tr>
+
+              <td>Choose Plan</td>
+
+              <td>
+                <a href="#" class="button">Choose</a>
+              </td>
+
+              <td class="recommended">
+                <a href="#" class="button">Choose</a>
+              </td>
+
+              <td>
+                <a href="#" class="button">Choose</a>
+              </td>
+
+            </tr>
+
+          </tbody>
+
+        </table>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</body>
+                    </html>
