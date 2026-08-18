@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Modern Company Story</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b0b0f;
+      color: #fff;
+    }
+
+    .story {
+      padding: 100px 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .story-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .visual {
+      min-height: 500px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #15151b;
+      border: 1px solid #29292f;
+      border-radius: 25px;
+      overflow: hidden;
+    }
+
+    .visual::before {
+      content: "";
+      position: absolute;
+      width: 260px;
+      height: 260px;
+      border: 1px solid #444;
+      border-radius: 50%;
+    }
+
+    .visual::after {
+      content: "";
+      position: absolute;
+      width: 140px;
+      height: 140px;
+      border: 1px solid #333;
+      border-radius: 50%;
+    }
+
+    .year {
+      position: relative;
+      z-index: 2;
+      font-size: 70px;
+      font-weight: bold;
+    }
+
+    .label {
+      color: #999;
+      font-size: 13px;
+      letter-spacing: 1px;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: clamp(40px, 6vw, 62px);
+      line-height: 1.05;
+      margin-bottom: 22px;
+    }
+
+    .text {
+      color: #888;
+      font-size: 16px;
+      line-height: 1.8;
+      margin-bottom: 18px;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 30px;
+    }
+
+    .stat {
+      padding: 20px;
+      border: 1px solid #29292f;
+      border-radius: 13px;
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 25px;
+      margin-bottom: 5px;
+    }
+
+    .stat span {
+      color: #666;
+      font-size: 12px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 14px 22px;
+      background: #fff;
+      color: #000;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    @media (max-width: 800px) {
+      .story {
+        padding: 70px 16px;
+      }
+
+      .story-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .visual {
+        min-height: 320px;
+      }
+
+      .year {
+        font-size: 55px;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .stats {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="story">
+
+    <div class="container">
+
+      <div class="story-grid">
+
+        <div class="visual">
+
+          <div class="year">
+            2018
+          </div>
+
+        </div>
+
+
+        <div class="content">
+
+          <div class="label">
+            OUR STORY
+          </div>
+
+          <h1>
+            Started Small. Built To Last.
+          </h1>
+
+          <p class="text">
+            What started as a simple idea became a mission
+            to build digital experiences that are useful,
+            beautiful and easy to understand.
+          </p>
+
+          <p class="text">
+            Over the years, our team has grown, our products
+            have evolved and our purpose has remained the same:
+            create better experiences for the people who use them.
+          </p>
+
+          <div class="stats">
+
+            <div class="stat">
+              <strong>8+</strong>
+              <span>Years Building</span>
+            </div>
+
+            <div class="stat">
+              <strong>40+</strong>
+              <span>Team Members</span>
+            </div>
+
+            <div class="stat">
+              <strong>12K+</strong>
+              <span>Customers</span>
+            </div>
+
+          </div>
+
+          <a href="#" class="button">
+            Learn More →
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</body>
+            </html>
