@@ -7,13 +7,17 @@
 
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Arial,sans-serif;background:#08080b;color:#fff}
+body{
+font-family:Arial,Helvetica,sans-serif;
+background:#08080b;
+color:#fff;
+}
 a{text-decoration:none;color:inherit}
 
 .hero{
 padding:100px 20px 80px;
 text-align:center;
-border-bottom:1px solid #25252b
+border-bottom:1px solid #25252b;
 }
 
 .badge{
@@ -24,25 +28,25 @@ border-radius:999px;
 color:#aaa;
 font-size:11px;
 letter-spacing:1px;
-margin-bottom:25px
+margin-bottom:25px;
 }
 
-.hero h1{
+h1{
 max-width:850px;
 margin:auto;
 font-size:clamp(48px,8vw,86px);
 line-height:.98;
-letter-spacing:-3px
+letter-spacing:-3px;
 }
 
-.hero h1 span{color:#777}
+h1 span{color:#777}
 
 .hero p{
 max-width:650px;
 margin:25px auto 0;
 color:#888;
 font-size:17px;
-line-height:1.7
+line-height:1.7;
 }
 
 .buttons{
@@ -50,7 +54,7 @@ display:flex;
 justify-content:center;
 gap:12px;
 margin-top:35px;
-flex-wrap:wrap
+flex-wrap:wrap;
 }
 
 .button{
@@ -58,11 +62,17 @@ display:inline-block;
 padding:14px 22px;
 border-radius:10px;
 font-size:13px;
-font-weight:bold
+font-weight:bold;
 }
 
-.primary{background:#fff;color:#000}
-.secondary{border:1px solid #444}
+.primary{
+background:#fff;
+color:#000;
+}
+
+.secondary{
+border:1px solid #444;
+}
 
 .stats{
 max-width:900px;
@@ -71,13 +81,13 @@ display:grid;
 grid-template-columns:repeat(3,1fr);
 border:1px solid #29292f;
 border-radius:18px;
-overflow:hidden
+overflow:hidden;
 }
 
 .stat{
 padding:25px;
 background:#111116;
-border-right:1px solid #29292f
+border-right:1px solid #29292f;
 }
 
 .stat:last-child{border-right:none}
@@ -85,36 +95,38 @@ border-right:1px solid #29292f
 .stat strong{
 display:block;
 font-size:30px;
-margin-bottom:6px
+margin-bottom:6px;
 }
 
 .stat span{
 color:#666;
-font-size:12px
+font-size:12px;
 }
 
 .collection{
 max-width:1150px;
 margin:auto;
-padding:80px 20px
+padding:80px 20px;
 }
 
 .heading{
-margin-bottom:35px
+margin-bottom:35px;
 }
 
-.heading h2{font-size:35px}
+.heading h2{
+font-size:35px;
+}
 
 .heading p{
 margin-top:10px;
 color:#777;
-font-size:13px
+font-size:13px;
 }
 
 .grid{
 display:grid;
 grid-template-columns:repeat(3,1fr);
-gap:15px
+gap:15px;
 }
 
 .card{
@@ -126,39 +138,47 @@ justify-content:space-between;
 background:#111116;
 border:1px solid #29292f;
 border-radius:17px;
-transition:.25s
+transition:.25s ease;
 }
 
 .card:hover{
 transform:translateY(-4px);
-border-color:#666
+border-color:#666;
 }
 
 .number{
 color:#555;
 font-size:12px;
-letter-spacing:1px
+letter-spacing:1px;
 }
 
 .card h3{
 font-size:19px;
-margin:20px 0 8px
+line-height:1.3;
+margin:20px 0 8px;
 }
 
 .card p{
 color:#777;
 font-size:13px;
-line-height:1.6
+line-height:1.6;
 }
 
 .view{
 display:inline-block;
 margin-top:20px;
+color:#fff;
 font-size:12px;
-font-weight:bold
+font-weight:bold;
 }
 
-.soon{color:#555}
+.soon{
+opacity:.55;
+}
+
+.soon .view{
+color:#666;
+}
 
 .cta{
 margin-top:60px;
@@ -166,17 +186,17 @@ padding:70px 25px;
 text-align:center;
 background:#111116;
 border:1px solid #333;
-border-radius:25px
+border-radius:25px;
 }
 
 .cta h2{
 font-size:clamp(35px,6vw,55px);
-margin-bottom:15px
+margin-bottom:15px;
 }
 
 .cta p{
 color:#777;
-margin-bottom:25px
+margin-bottom:25px;
 }
 
 footer{
@@ -184,21 +204,46 @@ padding:30px 20px;
 text-align:center;
 border-top:1px solid #25252b;
 color:#555;
-font-size:12px
+font-size:12px;
 }
 
 @media(max-width:800px){
-.grid{grid-template-columns:repeat(2,1fr)}
+.grid{
+grid-template-columns:repeat(2,1fr);
+}
 }
 
 @media(max-width:520px){
-.hero{padding:80px 16px 60px}
-.hero h1{letter-spacing:-2px}
-.stats{grid-template-columns:1fr}
-.stat{border-right:none;border-bottom:1px solid #29292f}
-.stat:last-child{border-bottom:none}
-.grid{grid-template-columns:1fr}
-.collection{padding:60px 16px}
+
+.hero{
+padding:80px 16px 60px;
+}
+
+h1{
+letter-spacing:-2px;
+}
+
+.stats{
+grid-template-columns:1fr;
+}
+
+.stat{
+border-right:none;
+border-bottom:1px solid #29292f;
+}
+
+.stat:last-child{
+border-bottom:none;
+}
+
+.grid{
+grid-template-columns:1fr;
+}
+
+.collection{
+padding:60px 16px;
+}
+
 }
 </style>
 </head>
@@ -207,7 +252,9 @@ font-size:12px
 
 <header class="hero">
 
-<div class="badge">COMPLETE HTML / CSS COLLECTION</div>
+<div class="badge">
+COMPLETE HTML / CSS COLLECTION
+</div>
 
 <h1>
 50 Modern
@@ -229,7 +276,8 @@ Explore Collection ↓
 <a
 href="https://github.com/ChosenOne-Me/50-modern-html-css-sections"
 class="button secondary"
-target="_blank">
+target="_blank"
+rel="noopener">
 GitHub
 </a>
 
@@ -300,20 +348,20 @@ GitHub
 <div class="card">
 <div>
 <div class="number">04</div>
-<h3>Blog</h3>
-<p>Modern editorial blog layout.</p>
+<h3>Blog Featured</h3>
+<p>Featured editorial content.</p>
 </div>
-<a href="blog.html" class="view">Live Demo →</a>
+<a href="blog-featured.html" class="view">Live Demo →</a>
 </div>
 
 
 <div class="card">
 <div>
 <div class="number">05</div>
-<h3>Featured Blog</h3>
-<p>Featured article presentation.</p>
+<h3>Blog</h3>
+<p>Modern blog content layout.</p>
 </div>
-<a href="blog-featured.html" class="view">Live Demo →</a>
+<a href="blog.html" class="view">Live Demo →</a>
 </div>
 
 
@@ -340,16 +388,6 @@ GitHub
 <div class="card">
 <div>
 <div class="number">08</div>
-<h3>Comparison</h3>
-<p>Compare products or services.</p>
-</div>
-<a href="comparison.html" class="view">Live Demo →</a>
-</div>
-
-
-<div class="card">
-<div>
-<div class="number">09</div>
 <h3>Comparison Table</h3>
 <p>Detailed side-by-side comparison.</p>
 </div>
@@ -359,17 +397,17 @@ GitHub
 
 <div class="card">
 <div>
-<div class="number">10</div>
-<h3>Contact</h3>
-<p>Clean contact layout.</p>
+<div class="number">09</div>
+<h3>Comparison</h3>
+<p>Compare products or services.</p>
 </div>
-<a href="contact.html" class="view">Live Demo →</a>
+<a href="comparison.html" class="view">Live Demo →</a>
 </div>
 
 
 <div class="card">
 <div>
-<div class="number">11</div>
+<div class="number">10</div>
 <h3>Contact Split</h3>
 <p>Split contact layout.</p>
 </div>
@@ -379,17 +417,17 @@ GitHub
 
 <div class="card">
 <div>
-<div class="number">12</div>
-<h3>CTA</h3>
-<p>Call-to-action section.</p>
+<div class="number">11</div>
+<h3>Contact</h3>
+<p>Clean contact layout.</p>
 </div>
-<a href="cta.html" class="view">Live Demo →</a>
+<a href="contact.html" class="view">Live Demo →</a>
 </div>
 
 
 <div class="card">
 <div>
-<div class="number">13</div>
+<div class="number">12</div>
 <h3>CTA Banner</h3>
 <p>Promotional CTA banner.</p>
 </div>
@@ -399,17 +437,17 @@ GitHub
 
 <div class="card">
 <div>
-<div class="number">14</div>
-<h3>FAQ</h3>
-<p>Frequently asked questions.</p>
+<div class="number">13</div>
+<h3>CTA</h3>
+<p>Call-to-action section.</p>
 </div>
-<a href="faq.html" class="view">Live Demo →</a>
+<a href="cta.html" class="view">Live Demo →</a>
 </div>
 
 
 <div class="card">
 <div>
-<div class="number">15</div>
+<div class="number">14</div>
 <h3>FAQ Cards</h3>
 <p>Card-based FAQ layout.</p>
 </div>
@@ -419,8 +457,8 @@ GitHub
 
 <div class="card">
 <div>
-<div class="number">16</div>
-<h3>FAQ + CTA</h3>
+<div class="number">15</div>
+<h3>FAQ CTA</h3>
 <p>FAQ with conversion CTA.</p>
 </div>
 <a href="faq-cta.html" class="view">Live Demo →</a>
@@ -429,11 +467,21 @@ GitHub
 
 <div class="card">
 <div>
-<div class="number">17</div>
-<h3>Two Column FAQ</h3>
+<div class="number">16</div>
+<h3>FAQ Two Column</h3>
 <p>Two-column FAQ layout.</p>
 </div>
 <a href="faq-two-column.html" class="view">Live Demo →</a>
+</div>
+
+
+<div class="card">
+<div>
+<div class="number">17</div>
+<h3>FAQ</h3>
+<p>Frequently asked questions.</p>
+</div>
+<a href="faq.html" class="view">Live Demo →</a>
 </div>
 
 
@@ -530,16 +578,6 @@ GitHub
 <div class="card">
 <div>
 <div class="number">27</div>
-<h3>Newsletter</h3>
-<p>Email subscription section.</p>
-</div>
-<a href="newsletter.html" class="view">Live Demo →</a>
-</div>
-
-
-<div class="card">
-<div>
-<div class="number">28</div>
 <h3>Newsletter CTA</h3>
 <p>Newsletter conversion section.</p>
 </div>
@@ -549,17 +587,17 @@ GitHub
 
 <div class="card">
 <div>
-<div class="number">29</div>
-<h3>Portfolio</h3>
-<p>Creative portfolio showcase.</p>
+<div class="number">28</div>
+<h3>Newsletter</h3>
+<p>Email subscription section.</p>
 </div>
-<a href="portfolio.html" class="view">Live Demo →</a>
+<a href="newsletter.html" class="view">Live Demo →</a>
 </div>
 
 
 <div class="card">
 <div>
-<div class="number">30</div>
+<div class="number">29</div>
 <h3>Portfolio Cards</h3>
 <p>Project card collection.</p>
 </div>
@@ -569,17 +607,17 @@ GitHub
 
 <div class="card">
 <div>
-<div class="number">31</div>
-<h3>Pricing</h3>
-<p>Modern pricing plans.</p>
+<div class="number">30</div>
+<h3>Portfolio</h3>
+<p>Creative portfolio showcase.</p>
 </div>
-<a href="pricing.html" class="view">Live Demo →</a>
+<a href="portfolio.html" class="view">Live Demo →</a>
 </div>
 
 
 <div class="card">
 <div>
-<div class="number">32</div>
+<div class="number">31</div>
 <h3>Pricing Spotlight</h3>
 <p>Featured pricing offer.</p>
 </div>
@@ -589,7 +627,7 @@ GitHub
 
 <div class="card">
 <div>
-<div class="number">33</div>
+<div class="number">32</div>
 <h3>Pricing Toggle</h3>
 <p>Monthly and yearly pricing.</p>
 </div>
@@ -599,21 +637,31 @@ GitHub
 
 <div class="card">
 <div>
-<div class="number">34</div>
-<h3>Process</h3>
-<p>Workflow presentation.</p>
+<div class="number">33</div>
+<h3>Pricing</h3>
+<p>Modern pricing plans.</p>
 </div>
-<a href="process.html" class="view">Live Demo →</a>
+<a href="pricing.html" class="view">Live Demo →</a>
+</div>
+
+
+<div class="card">
+<div>
+<div class="number">34</div>
+<h3>Process Steps</h3>
+<p>Numbered process steps.</p>
+</div>
+<a href="process-steps.html" class="view">Live Demo →</a>
 </div>
 
 
 <div class="card">
 <div>
 <div class="number">35</div>
-<h3>Process Steps</h3>
-<p>Numbered process steps.</p>
+<h3>Process</h3>
+<p>Workflow presentation.</p>
 </div>
-<a href="process-steps.html" class="view">Live Demo →</a>
+<a href="process.html" class="view">Live Demo →</a>
 </div>
 
 
@@ -670,20 +718,20 @@ GitHub
 <div class="card">
 <div>
 <div class="number">41</div>
-<h3>Team</h3>
-<p>Team member showcase.</p>
+<h3>Team Grid 2</h3>
+<p>Alternative team layout.</p>
 </div>
-<a href="team.html" class="view">Live Demo →</a>
+<a href="team-grid-2.html" class="view">Live Demo →</a>
 </div>
 
 
 <div class="card">
 <div>
 <div class="number">42</div>
-<h3>Team Grid 2</h3>
-<p>Alternative team layout.</p>
+<h3>Team</h3>
+<p>Team member showcase.</p>
 </div>
-<a href="team-grid-2.html" class="view">Live Demo →</a>
+<a href="team.html" class="view">Live Demo →</a>
 </div>
 
 
@@ -741,7 +789,7 @@ GitHub
 <div>
 <div class="number">48</div>
 <h3>Coming Soon</h3>
-<p>New section will be added.</p>
+<p>New HTML/CSS section.</p>
 </div>
 <span class="view">Coming Soon</span>
 </div>
@@ -751,7 +799,7 @@ GitHub
 <div>
 <div class="number">49</div>
 <h3>Coming Soon</h3>
-<p>New section will be added.</p>
+<p>New HTML/CSS section.</p>
 </div>
 <span class="view">Coming Soon</span>
 </div>
@@ -761,7 +809,7 @@ GitHub
 <div>
 <div class="number">50</div>
 <h3>Coming Soon</h3>
-<p>New section will be added.</p>
+<p>New HTML/CSS section.</p>
 </div>
 <span class="view">Coming Soon</span>
 </div>
