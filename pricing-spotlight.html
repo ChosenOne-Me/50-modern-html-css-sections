@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Pricing Spotlight Section</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b0b0f;
+      color: #fff;
+    }
+
+    .pricing {
+      padding: 100px 20px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .heading {
+      max-width: 650px;
+      margin: 0 auto 55px;
+      text-align: center;
+    }
+
+    .heading span {
+      color: #999;
+      font-size: 13px;
+      letter-spacing: 1px;
+    }
+
+    .heading h1 {
+      font-size: clamp(40px, 6vw, 60px);
+      line-height: 1.05;
+      margin: 15px 0;
+    }
+
+    .heading p {
+      color: #888;
+      line-height: 1.6;
+      font-size: 17px;
+    }
+
+    .pricing-card {
+      position: relative;
+      overflow: hidden;
+      max-width: 700px;
+      margin: auto;
+      padding: 50px;
+      background: #111116;
+      border: 1px solid #444;
+      border-radius: 25px;
+    }
+
+    .popular {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      padding: 7px 11px;
+      border-radius: 999px;
+      background: #fff;
+      color: #000;
+      font-size: 10px;
+      font-weight: bold;
+    }
+
+    .plan {
+      color: #999;
+      font-size: 14px;
+      letter-spacing: 1px;
+      margin-bottom: 15px;
+    }
+
+    .price {
+      font-size: 65px;
+      font-weight: bold;
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+
+    .price span {
+      color: #777;
+      font-size: 15px;
+      font-weight: normal;
+    }
+
+    .description {
+      color: #888;
+      line-height: 1.6;
+      margin-bottom: 35px;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 13px;
+      margin-bottom: 35px;
+    }
+
+    .feature {
+      padding: 15px;
+      border: 1px solid #29292f;
+      border-radius: 11px;
+      color: #aaa;
+      font-size: 14px;
+    }
+
+    .feature::before {
+      content: "✓";
+      margin-right: 8px;
+      color: #fff;
+    }
+
+    .button {
+      display: block;
+      width: 100%;
+      padding: 16px;
+      text-align: center;
+      background: #fff;
+      color: #000;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+
+    .note {
+      text-align: center;
+      color: #666;
+      font-size: 12px;
+      margin-top: 15px;
+    }
+
+    @media (max-width: 600px) {
+      .pricing {
+        padding: 70px 16px;
+      }
+
+      .pricing-card {
+        padding: 35px 22px;
+      }
+
+      .price {
+        font-size: 52px;
+      }
+
+      .features {
+        grid-template-columns: 1fr;
+      }
+
+      .popular {
+        position: static;
+        display: inline-block;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="pricing">
+
+    <div class="container">
+
+      <div class="heading">
+
+        <span>SIMPLE PRICING</span>
+
+        <h1>One Powerful Plan.</h1>
+
+        <p>
+          A focused pricing section designed to make
+          your main offer easy to understand.
+        </p>
+
+      </div>
+
+      <div class="pricing-card">
+
+        <div class="popular">
+          MOST POPULAR
+        </div>
+
+        <div class="plan">
+          PRO PLAN
+        </div>
+
+        <div class="price">
+          $49 <span>/ month</span>
+        </div>
+
+        <p class="description">
+          Everything you need to launch, grow and manage
+          your digital product without unnecessary complexity.
+        </p>
+
+        <div class="features">
+
+          <div class="feature">Unlimited projects</div>
+
+          <div class="feature">Advanced analytics</div>
+
+          <div class="feature">Priority support</div>
+
+          <div class="feature">Team collaboration</div>
+
+          <div class="feature">Custom integrations</div>
+
+          <div class="feature">Advanced security</div>
+
+        </div>
+
+        <a href="#" class="button">
+          Get Started →
+        </a>
+
+        <div class="note">
+          Cancel anytime · No long-term commitment
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</body>
+                                                   </html>
