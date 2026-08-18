@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Modern Product Showcase</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b0b0f;
+      color: #fff;
+    }
+
+    .showcase {
+      padding: 100px 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .showcase-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .label {
+      color: #999;
+      font-size: 13px;
+      letter-spacing: 1px;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: clamp(40px, 6vw, 65px);
+      line-height: 1.05;
+      margin-bottom: 20px;
+    }
+
+    .description {
+      color: #888;
+      font-size: 17px;
+      line-height: 1.7;
+      margin-bottom: 30px;
+    }
+
+    .features {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+
+    .feature {
+      display: flex;
+      gap: 15px;
+      align-items: flex-start;
+    }
+
+    .check {
+      width: 30px;
+      height: 30px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+      color: #000;
+      border-radius: 50%;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .feature h3 {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    .feature p {
+      color: #777;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 22px;
+      background: #fff;
+      color: #000;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+
+    .product-visual {
+      min-height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #15151b;
+      border: 1px solid #29292f;
+      border-radius: 25px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .phone {
+      width: 220px;
+      height: 430px;
+      padding: 10px;
+      background: #050507;
+      border: 2px solid #444;
+      border-radius: 32px;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+    }
+
+    .screen {
+      height: 100%;
+      padding: 22px 15px;
+      background: #18181e;
+      border-radius: 23px;
+    }
+
+    .screen-top {
+      height: 12px;
+      width: 70px;
+      margin: 0 auto 35px;
+      background: #333;
+      border-radius: 20px;
+    }
+
+    .screen-title {
+      width: 120px;
+      height: 15px;
+      margin-bottom: 12px;
+      background: #ddd;
+      border-radius: 5px;
+    }
+
+    .screen-line {
+      width: 100%;
+      height: 8px;
+      margin-bottom: 8px;
+      background: #444;
+      border-radius: 5px;
+    }
+
+    .screen-card {
+      height: 120px;
+      margin-top: 25px;
+      background: #29292f;
+      border-radius: 15px;
+    }
+
+    @media (max-width: 800px) {
+      .showcase {
+        padding: 70px 16px;
+      }
+
+      .showcase-grid {
+        grid-template-columns: 1fr;
+        gap: 45px;
+      }
+
+      .product-visual {
+        min-height: 430px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="showcase">
+
+    <div class="container">
+
+      <div class="showcase-grid">
+
+        <div class="content">
+
+          <div class="label">
+            YOUR PRODUCT
+          </div>
+
+          <h1>
+            Designed To Make Life Simpler.
+          </h1>
+
+          <p class="description">
+            Showcase your app, software or digital product
+            with a focused section designed to highlight
+            its most important benefits.
+          </p>
+
+          <div class="features">
+
+            <div class="feature">
+
+              <div class="check">✓</div>
+
+              <div>
+                <h3>Simple Experience</h3>
+                <p>
+                  Give users a clean and intuitive experience.
+                </p>
+              </div>
+
+            </div>
+
+            <div class="feature">
+
+              <div class="check">✓</div>
+
+              <div>
+                <h3>Powerful Tools</h3>
+                <p>
+                  Highlight the features that make your product useful.
+                </p>
+              </div>
+
+            </div>
+
+            <div class="feature">
+
+              <div class="check">✓</div>
+
+              <div>
+                <h3>Built For Everyone</h3>
+                <p>
+                  Present a product that works across modern devices.
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <a href="#" class="button">
+            Explore Product →
+          </a>
+
+        </div>
+
+
+        <div class="product-visual">
+
+          <div class="phone">
+
+            <div class="screen">
+
+              <div class="screen-top"></div>
+
+              <div class="screen-title"></div>
+
+              <div class="screen-line"></div>
+              <div class="screen-line"></div>
+              <div class="screen-line"></div>
+
+              <div class="screen-card"></div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</body>
+</html>
