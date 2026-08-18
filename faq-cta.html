@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>FAQ + CTA Section</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b0b0f;
+      color: #fff;
+    }
+
+    .section {
+      padding: 100px 20px;
+    }
+
+    .container {
+      max-width: 1050px;
+      margin: auto;
+    }
+
+    .heading {
+      max-width: 700px;
+      margin: 0 auto 50px;
+      text-align: center;
+    }
+
+    .heading span {
+      color: #999;
+      font-size: 13px;
+      letter-spacing: 1px;
+    }
+
+    .heading h1 {
+      font-size: clamp(40px, 6vw, 60px);
+      line-height: 1.05;
+      margin: 15px 0;
+    }
+
+    .heading p {
+      color: #888;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    .faq {
+      display: grid;
+      gap: 12px;
+    }
+
+    details {
+      background: #111116;
+      border: 1px solid #29292f;
+      border-radius: 15px;
+      padding: 0 22px;
+    }
+
+    summary {
+      position: relative;
+      padding: 22px 35px 22px 0;
+      cursor: pointer;
+      list-style: none;
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    summary::after {
+      content: "+";
+      position: absolute;
+      right: 0;
+      top: 17px;
+      color: #777;
+      font-size: 23px;
+    }
+
+    details[open] summary::after {
+      content: "−";
+    }
+
+    details p {
+      color: #888;
+      line-height: 1.7;
+      font-size: 14px;
+      padding: 0 0 22px;
+    }
+
+    .cta {
+      margin-top: 50px;
+      padding: 45px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+      background: #15151b;
+      border: 1px solid #333;
+      border-radius: 22px;
+    }
+
+    .cta h2 {
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+
+    .cta p {
+      color: #777;
+      font-size: 14px;
+    }
+
+    .button {
+      flex-shrink: 0;
+      padding: 15px 22px;
+      background: #fff;
+      color: #000;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    @media (max-width: 650px) {
+      .section {
+        padding: 70px 16px;
+      }
+
+      .cta {
+        padding: 30px 22px;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .button {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="section">
+
+    <div class="container">
+
+      <div class="heading">
+
+        <span>HELP CENTER</span>
+
+        <h1>Questions? We've Got Answers.</h1>
+
+        <p>
+          Find quick answers to the most common questions
+          before getting started.
+        </p>
+
+      </div>
+
+
+      <div class="faq">
+
+        <details>
+          <summary>
+            How quickly can I get started?
+          </summary>
+
+          <p>
+            You can get started immediately. The setup
+            process is designed to be simple and straightforward.
+          </p>
+        </details>
+
+
+        <details>
+          <summary>
+            Can I customize everything?
+          </summary>
+
+          <p>
+            Yes. You can customize the colors, typography,
+            spacing, text and other visual elements.
+          </p>
+        </details>
+
+
+        <details>
+          <summary>
+            Does it work on mobile?
+          </summary>
+
+          <p>
+            Yes. The layout is fully responsive and adapts
+            to phones, tablets and desktop screens.
+          </p>
+        </details>
+
+
+        <details>
+          <summary>
+            Do you offer support?
+          </summary>
+
+          <p>
+            Support options can be provided depending on
+            the product or license you choose.
+          </p>
+        </details>
+
+
+        <details>
+          <summary>
+            Can I use this for a commercial website?
+          </summary>
+
+          <p>
+            Commercial usage depends on the license included
+            with the final product.
+          </p>
+        </details>
+
+      </div>
+
+
+      <div class="cta">
+
+        <div>
+
+          <h2>Still Have Questions?</h2>
+
+          <p>
+            Our team is ready to help you get started.
+          </p>
+
+        </div>
+
+        <a href="#" class="button">
+          Contact Us →
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</body>
+  </html>
