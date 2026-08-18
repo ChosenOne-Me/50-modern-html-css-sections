@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Video Media Showcase</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b0b0f;
+      color: #fff;
+    }
+
+    .video-section {
+      padding: 100px 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .heading {
+      max-width: 700px;
+      margin: 0 auto 50px;
+      text-align: center;
+    }
+
+    .heading span {
+      color: #999;
+      font-size: 13px;
+      letter-spacing: 1px;
+    }
+
+    .heading h1 {
+      font-size: clamp(40px, 6vw, 60px);
+      line-height: 1.05;
+      margin: 15px 0;
+    }
+
+    .heading p {
+      color: #888;
+      font-size: 17px;
+      line-height: 1.6;
+    }
+
+    .video-card {
+      position: relative;
+      min-height: 560px;
+      display: flex;
+      align-items: flex-end;
+      overflow: hidden;
+      background: #15151b;
+      border: 1px solid #29292f;
+      border-radius: 25px;
+    }
+
+    .video-placeholder {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #555;
+      font-size: 14px;
+    }
+
+    .play {
+      width: 75px;
+      height: 75px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #666;
+      border-radius: 50%;
+      color: #fff;
+      font-size: 24px;
+      padding-left: 4px;
+    }
+
+    .overlay {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      padding: 45px;
+      background: linear-gradient(
+        transparent,
+        rgba(0, 0, 0, .9)
+      );
+      padding-top: 150px;
+    }
+
+    .category {
+      color: #aaa;
+      font-size: 12px;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+
+    .overlay h2 {
+      max-width: 700px;
+      font-size: clamp(30px, 5vw, 48px);
+      line-height: 1.1;
+      margin-bottom: 12px;
+    }
+
+    .overlay p {
+      max-width: 650px;
+      color: #999;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .meta {
+      display: flex;
+      gap: 20px;
+      margin-top: 20px;
+      color: #777;
+      font-size: 12px;
+    }
+
+    @media (max-width: 650px) {
+      .video-section {
+        padding: 70px 16px;
+      }
+
+      .video-card {
+        min-height: 450px;
+      }
+
+      .overlay {
+        padding: 30px 25px;
+        padding-top: 130px;
+      }
+
+      .play {
+        width: 60px;
+        height: 60px;
+        font-size: 19px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="video-section">
+
+    <div class="container">
+
+      <div class="heading">
+
+        <span>WATCH & EXPLORE</span>
+
+        <h1>
+          See It In Action.
+        </h1>
+
+        <p>
+          Use a large media block to showcase a product,
+          campaign, case study or brand story.
+        </p>
+
+      </div>
+
+
+      <div class="video-card">
+
+        <div class="video-placeholder">
+
+          <div class="play">▶</div>
+
+        </div>
+
+
+        <div class="overlay">
+
+          <div class="category">
+            FEATURED VIDEO · 04:32
+          </div>
+
+          <h2>
+            Behind The Scenes Of Our Creative Process
+          </h2>
+
+          <p>
+            Take a closer look at how ideas become
+            polished digital experiences.
+          </p>
+
+          <div class="meta">
+            <span>Studio Story</span>
+            <span>2026</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</body>
+  </html>
