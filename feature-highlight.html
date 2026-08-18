@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Feature Highlight Section</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b0b0f;
+      color: #fff;
+    }
+
+    .highlight {
+      padding: 100px 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .highlight-card {
+      position: relative;
+      overflow: hidden;
+      padding: 70px;
+      background: #111116;
+      border: 1px solid #29292f;
+      border-radius: 28px;
+    }
+
+    .highlight-card::before {
+      content: "";
+      position: absolute;
+      width: 450px;
+      height: 450px;
+      top: -250px;
+      right: -150px;
+      border-radius: 50%;
+      background: #fff;
+      opacity: 0.04;
+      filter: blur(70px);
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      max-width: 700px;
+    }
+
+    .label {
+      color: #999;
+      font-size: 13px;
+      letter-spacing: 1px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: clamp(40px, 7vw, 70px);
+      line-height: 1.02;
+      margin-bottom: 22px;
+    }
+
+    .description {
+      color: #888;
+      font-size: 17px;
+      line-height: 1.7;
+      margin-bottom: 40px;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+    }
+
+    .feature {
+      padding: 22px;
+      background: #18181e;
+      border: 1px solid #29292f;
+      border-radius: 15px;
+    }
+
+    .icon {
+      width: 42px;
+      height: 42px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      border: 1px solid #444;
+      border-radius: 11px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .feature h2 {
+      font-size: 17px;
+      margin-bottom: 8px;
+    }
+
+    .feature p {
+      color: #777;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 35px;
+      padding: 14px 22px;
+      background: #fff;
+      color: #000;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+
+    @media (max-width: 750px) {
+      .highlight {
+        padding: 70px 16px;
+      }
+
+      .highlight-card {
+        padding: 40px 25px;
+      }
+
+      .features {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="highlight">
+
+    <div class="container">
+
+      <div class="highlight-card">
+
+        <div class="content">
+
+          <div class="label">
+            POWERFUL FEATURES
+          </div>
+
+          <h1>
+            Everything You Need. Nothing You Don't.
+          </h1>
+
+          <p class="description">
+            Highlight your strongest product feature with
+            a focused section that combines a bold message
+            with supporting benefits.
+          </p>
+
+          <div class="features">
+
+            <div class="feature">
+
+              <div class="icon">01</div>
+
+              <h2>Fast</h2>
+
+              <p>
+                Optimized for speed and a smooth experience.
+              </p>
+
+            </div>
+
+            <div class="feature">
+
+              <div class="icon">02</div>
+
+              <h2>Simple</h2>
+
+              <p>
+                Easy to understand and effortless to use.
+              </p>
+
+            </div>
+
+            <div class="feature">
+
+              <div class="icon">03</div>
+
+              <h2>Flexible</h2>
+
+              <p>
+                Adapt the experience to fit your needs.
+              </p>
+
+            </div>
+
+          </div>
+
+          <a href="#" class="button">
+            Explore Features →
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</body>
+          </html>
