@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Testimonial Spotlight</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b0b0f;
+      color: #fff;
+    }
+
+    .spotlight {
+      padding: 100px 20px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .card {
+      padding: 65px;
+      text-align: center;
+      background: #111116;
+      border: 1px solid #29292f;
+      border-radius: 28px;
+    }
+
+    .label {
+      color: #999;
+      font-size: 13px;
+      letter-spacing: 1px;
+      margin-bottom: 25px;
+    }
+
+    .stars {
+      font-size: 18px;
+      letter-spacing: 5px;
+      margin-bottom: 30px;
+    }
+
+    blockquote {
+      max-width: 780px;
+      margin: auto;
+      font-size: clamp(25px, 4vw, 42px);
+      line-height: 1.25;
+      font-weight: bold;
+      margin-bottom: 35px;
+    }
+
+    .person {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .avatar {
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: #fff;
+      color: #000;
+      font-weight: bold;
+    }
+
+    .person-info {
+      text-align: left;
+    }
+
+    .person-info strong {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
+
+    .person-info span {
+      color: #777;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      .spotlight {
+        padding: 70px 16px;
+      }
+
+      .card {
+        padding: 45px 22px;
+      }
+
+      blockquote {
+        font-size: 25px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="spotlight">
+
+    <div class="container">
+
+      <div class="card">
+
+        <div class="label">
+          CUSTOMER STORY
+        </div>
+
+        <div class="stars">
+          ★★★★★
+        </div>
+
+        <blockquote>
+          “This completely changed the way we present
+          our product online. Simple, beautiful and
+          incredibly effective.”
+        </blockquote>
+
+        <div class="person">
+
+          <div class="avatar">
+            AM
+          </div>
+
+          <div class="person-info">
+            <strong>Alex Morgan</strong>
+            <span>CEO, Nova Studio</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</body>
+</html>
