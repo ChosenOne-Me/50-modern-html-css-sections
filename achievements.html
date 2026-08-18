@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Modern Achievement Section</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b0b0f;
+      color: #fff;
+    }
+
+    .achievements {
+      padding: 100px 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .heading {
+      max-width: 700px;
+      margin: 0 auto 55px;
+      text-align: center;
+    }
+
+    .heading span {
+      color: #999;
+      font-size: 13px;
+      letter-spacing: 1px;
+    }
+
+    .heading h1 {
+      font-size: clamp(40px, 6vw, 60px);
+      line-height: 1.05;
+      margin: 15px 0;
+    }
+
+    .heading p {
+      color: #888;
+      font-size: 17px;
+      line-height: 1.6;
+    }
+
+    .achievement-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+    }
+
+    .achievement {
+      padding: 35px 25px;
+      text-align: center;
+      background: #111116;
+      border: 1px solid #29292f;
+      border-radius: 18px;
+    }
+
+    .icon {
+      width: 50px;
+      height: 50px;
+      margin: 0 auto 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #444;
+      border-radius: 50%;
+      font-size: 18px;
+    }
+
+    .achievement strong {
+      display: block;
+      font-size: 38px;
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+
+    .achievement h2 {
+      font-size: 17px;
+      margin-bottom: 8px;
+    }
+
+    .achievement p {
+      color: #777;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    .bottom {
+      margin-top: 18px;
+      padding: 25px;
+      text-align: center;
+      background: #15151b;
+      border: 1px solid #29292f;
+      border-radius: 16px;
+      color: #888;
+      font-size: 14px;
+    }
+
+    .bottom strong {
+      color: #fff;
+    }
+
+    @media (max-width: 850px) {
+      .achievement-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 500px) {
+      .achievements {
+        padding: 70px 16px;
+      }
+
+      .achievement-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="achievements">
+
+    <div class="container">
+
+      <div class="heading">
+
+        <span>OUR ACHIEVEMENTS</span>
+
+        <h1>
+          Results That Matter.
+        </h1>
+
+        <p>
+          Highlight important milestones, awards and
+          measurable achievements with a clean visual layout.
+        </p>
+
+      </div>
+
+
+      <div class="achievement-grid">
+
+        <article class="achievement">
+
+          <div class="icon">★</div>
+
+          <strong>12K+</strong>
+
+          <h2>Happy Customers</h2>
+
+          <p>
+            People using our products every month.
+          </p>
+
+        </article>
+
+
+        <article class="achievement">
+
+          <div class="icon">↗</div>
+
+          <strong>98%</strong>
+
+          <h2>Success Rate</h2>
+
+          <p>
+            Customer satisfaction across our platform.
+          </p>
+
+        </article>
+
+
+        <article class="achievement">
+
+          <div class="icon">◆</div>
+
+          <strong>25+</strong>
+
+          <h2>Industry Awards</h2>
+
+          <p>
+            Recognized for quality and innovation.
+          </p>
+
+        </article>
+
+
+        <article class="achievement">
+
+          <div class="icon">∞</div>
+
+          <strong>40+</strong>
+
+          <h2>Countries</h2>
+
+          <p>
+            A growing global community of users.
+          </p>
+
+        </article>
+
+      </div>
+
+
+      <div class="bottom">
+
+        Trusted by <strong>12,000+ customers</strong>
+        around the world.
+
+      </div>
+
+    </div>
+
+  </section>
+
+</body>
+        </html>
